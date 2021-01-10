@@ -9,7 +9,7 @@ redirect_from:
 [![coding][1]][2]  |  [![research][3]][4]
 [![design][5]][6]  |  [![travel][7]][8]
 
-[1]:  ../images/Icon_coding.png =320px
+[1]:  ../images/Icon_coding.png =320x
 [2]:  https://yingjun-mou.github.io/cv/
 [3]:  ../images/Icon_research.png
 [4]:  https://yingjun-mou.github.io/cv/
