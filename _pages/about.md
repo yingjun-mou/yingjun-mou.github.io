@@ -7,5 +7,10 @@ redirect_from:
   - /about.html
 ---
 <tr>
-<td> <img src="../images/Homepage_design2.jpg" alt="Drawing" style="width: 1000px;"/> </td>
+<td> <img src="../images/Icon_coding.png" alt="Drawing" style="width: 380px;"/> </td>
+<td> <img src="../images/Icon_research.png" alt="Drawing" style="width: 380px;"/> </td>
+</tr>
+<tr>
+<td> <img src="../images/Icon_design.png" alt="Drawing" style="width: 380px;"/> </td>
+<td> <img src="../images/Icon_travel.png" alt="Drawing" style="width: 380px;"/> </td>
 </tr>
