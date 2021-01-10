@@ -7,10 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-<img src="../images/Homepage_design1.jpg" width=350>
+<img src="../images/Homepage_design1.jpg" width=500>
 
-<img src="../images/Homepage_design2.jpg" width=350>
+<img src="../images/Homepage_design2.jpg" width=500>
 
-<img src="../images/Homepage_design3.jpg" width=350>
+<img src="../images/Homepage_design3.jpg" width=500>
 
-<img src="../images/Homepage_design4.jpg" width=350>
+<img src="../images/Homepage_design4.jpg" width=500>
