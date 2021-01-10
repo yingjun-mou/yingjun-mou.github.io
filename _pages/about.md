@@ -7,10 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-<img src="../images/Homepage_design1.jpg" width=200>
+<table><tr>
+<td> <img src="../images/Homepage_design1.jpg" alt="Drawing" style="width: 250px;"/> </td>
+<td> <img src="../images/Homepage_design2.jpg" alt="Drawing" style="width: 250px;"/> </td>
+</tr></table>
 
-<img src="../images/Homepage_design2.jpg" width=200>
-
-<img src="../images/Homepage_design3.jpg" width=200>
-
-<img src="../images/Homepage_design4.jpg" width=200>
+<table><tr>
+<td> <img src="../images/Homepage_design3.jpg" alt="Drawing" style="width: 250px;"/> </td>
+<td> <img src="../images/Homepage_design4.jpg" alt="Drawing" style="width: 250px;"/> </td>
+</tr></table>
