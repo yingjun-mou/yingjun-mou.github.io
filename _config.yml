@@ -25,7 +25,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yingjun-mou/yingjun-mou.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 logo                     : "/images/logo.png"
-breadcrumbs              : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
@@ -212,6 +212,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: ""
