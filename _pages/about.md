@@ -6,14 +6,23 @@ redirect_from:
   - /about/
   - /about.html
 ---
-[![coding][1]]{ width=50% }[2]  |  [![research][3]][4]
-[![design][5]][6]  |  [![travel][7]][8]
-
-[1]:  ../images/Icon_coding.png
-[2]:  https://yingjun-mou.github.io/cv/
-[3]:  ../images/Icon_research.png
-[4]:  https://yingjun-mou.github.io/cv/
-[5]:  ../images/Icon_design.png
-[6]:  https://yingjun-mou.github.io/cv/
-[7]:  ../images/Icon_travel.png
-[8]:  https://yingjun-mou.github.io/cv/
+<tr>
+<td> 
+  <p><a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_coding.png" alt="Drawing" style="width: 320px; padding-right: 5px; padding-bottom: 5px;"/> </a>
+  </p>
+</td>
+<td> 
+  <p><a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_research.png" alt="Drawing" style="width: 320px; padding-left: 5px; padding-bottom: 5px;"/> </a>
+  </p>
+</td>
+</tr>
+<tr>
+<td> 
+  <p><a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_design.png" alt="Drawing" style="width: 320px; padding-right: 5px; padding-top: 5px;"/> </a>
+  </p>
+</td>
+<td> 
+  <p><a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_travel.png" alt="Drawing" style="width: 320px; padding-left: 5px; padding-top: 5px;"/> </a>
+  </p>
+</td>
+</tr>
