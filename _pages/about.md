@@ -6,8 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
 [![coding][1]][2]  |  [![research][3]][4]
 [![design][5]][6]  |  [![travel][7]][8]
 
