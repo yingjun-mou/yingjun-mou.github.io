@@ -7,5 +7,5 @@ redirect_from:
   - /about.html
 ---
 <tr>
-<td> <img src="../images/Homepage_design3.jpg" alt="Drawing" style="width: 380px;"/> </td>
+<td> <img src="../images/Homepage_design3.jpg" alt="Drawing" style="width: 1000px;"/> </td>
 </tr>
