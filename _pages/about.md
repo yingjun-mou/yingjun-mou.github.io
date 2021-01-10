@@ -9,4 +9,6 @@ redirect_from:
 
 Hi, I am Yingjun Mou, a MSCS student in College of Computing, Georgia Institute of Technology.
 
-![](images/Homepage_design)
+# Images
+
+<img src="./images/Homepage_design.jpg">
