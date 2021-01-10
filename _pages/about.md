@@ -11,17 +11,17 @@ redirect_from:
 [1]:  ../images/Icon_coding.png
 [2]:  https://yingjun-mou.github.io/cv/
 
-[![tocv2][1]][2]
+[![tocv2][3]][4]
 
-[1]:  ../images/Icon_research.png
-[2]:  https://yingjun-mou.github.io/cv/
+[3]:  ../images/Icon_research.png
+[4]:  https://yingjun-mou.github.io/cv/
 
-[![tocv3][1]][2]
+[![tocv3][5]][6]
 
-[1]:  ../images/Icon_design.png
-[2]:  https://yingjun-mou.github.io/cv/
+[5]:  ../images/Icon_design.png
+[6]:  https://yingjun-mou.github.io/cv/
 
-[![tocv4][1]][2]
+[![tocv4][7]][8]
 
-[1]:  ../images/Icon_travel.png
-[2]:  https://yingjun-mou.github.io/cv/
+[7]:  ../images/Icon_travel.png
+[8]:  https://yingjun-mou.github.io/cv/
