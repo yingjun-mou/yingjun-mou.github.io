@@ -84,7 +84,7 @@ author:
   name             : "Yingjun Mou"
   avatar           : "profile.png"
   bio              : "MSCS student<br>College of Computing<br>Georgia Institute of Technology"
-  location         : "Atlanta, Georgia"
+  location         :  #"Atlanta, Georgia"
   employer         :
   pubmed           :
   googlescholar    :  # "http://yourfullgooglescholarurl.com"
