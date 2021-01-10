@@ -87,7 +87,7 @@ author:
   location         : "Atlanta, Georgia"
   employer         :
   pubmed           :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    :  # "http://yourfullgooglescholarurl.com"
   email            : "ymou32@gatech.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
