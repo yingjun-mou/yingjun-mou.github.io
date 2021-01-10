@@ -15,6 +15,7 @@ url                      : https://yingjun-mou.github.io # the base hostname & p
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yingjun-mou/yingjun-mou.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+logo                     : "/images/logo.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
