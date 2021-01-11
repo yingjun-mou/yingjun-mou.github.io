@@ -31,6 +31,6 @@ redirect_from:
 <div class="hvrbox">
 	<img src="../images/Icon_coding.png" class="hvrbox-layer_bottom">
 	<div class="hvrbox-layer_top hvrbox-layer_scale">
-		<div class="hvrbox-text">CODING</div>
+		<div class="hvrbox-text"  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><h1 class="icontext" style="font-family: 'Lato'; font-size:54px; color:gray">CODING</h1></div>
 	</div>
 </div>
