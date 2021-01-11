@@ -6,12 +6,10 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<li>
-    <div>
-      <a href="https://yingjun-mou.github.io/cv/" style="background-image: url( '../images/Icon_coding.png' )">
-      </a>
-      <div>        
-        <a href="http://artemsheludko.com/adam-blog/"><h3>I conquer the Himalayas</h3></a>
-      </div>
-    </div>
-</li>
+<div class="container">
+  <img src="../images/Icon_coding.png" alt="Norway" style="width:100%;">
+  <div class="text-block">
+    <h4>Nature</h4>
+    <p>What a beautiful sunrise</p>
+  </div>
+</div>
