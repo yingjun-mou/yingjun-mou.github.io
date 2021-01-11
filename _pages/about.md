@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 <div style="position: relative;">
-  <img src="../images/Icon_coding.png" style="width:100%;" >
+  <a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_coding.png" style="width: 320px;   padding-right: 5px; padding-bottom: 5px;"/></a>
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
     <h1>CODING</h1>
   </div>
