@@ -16,6 +16,7 @@ redirect_from:
       -webkit-transform: scale(0);
       -ms-transform: scale(0);
       transform: scale(0);
+      background-color: yellow;
     }
     .hvrbox:hover .hvrbox-layer_scale,
     .hvrbox.active .hvrbox-layer_scale {
@@ -24,6 +25,7 @@ redirect_from:
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1);
+      background-color: yellow;
     }
 </style>
 
