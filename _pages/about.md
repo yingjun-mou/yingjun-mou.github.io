@@ -8,7 +8,7 @@ redirect_from:
 ---
 <tr>
 <td> 
-  <a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_coding.png" alt="Drawing" style="width: 320px; padding-right: 5px; padding-bottom: 5px;"/></a>
+  <a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_coding.png" alt="Drawing" style="width: 320px; padding-right: 5px; padding-bottom: 5px;"/><div class="centered">Centered</div></a>
 </td>
 <td> 
   <a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_research.jpg" alt="Drawing" style="width: 320px; padding-left: 5px; padding-bottom: 5px;"/></a>
