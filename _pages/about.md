@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<div style="text-align:center;">
+<div style="text-align:center; float: left;">
   <div style="float: left; position: relative; width: 320px;   padding-right: 5px; padding-bottom: 5px;">
     <a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_coding.png"/></a>
   </div>
@@ -17,7 +17,7 @@ redirect_from:
   </div>
 </div>
 
-<div style="text-align:center;">
+<div style="text-align:center; float: left;">
   <div style="float: left; position: relative; width: 320px; padding-right: 5px; padding-top: 5px;">
     <a href="https://yingjun-mou.github.io/cv/"><img src="../images/Icon_design.jpg"/></a>
   </div>
