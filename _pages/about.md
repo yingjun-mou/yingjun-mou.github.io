@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 <style>
-    icontext:hover {
+    .icontext:hover {
         background-color: yellow;
     }
 </style>
