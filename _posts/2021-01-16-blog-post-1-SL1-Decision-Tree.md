@@ -24,8 +24,8 @@ Decision Tree
 3. Describe each step of ID3 algorithm, its hypothesis space, and its bias
 	1. ID3 Algorithm:
 		1. Pick the best attribute A---determine the information gain (reduction of entropy) 
-			1. Gain(S,A) = Entropy(S) - Sum_v |Sv|/|S| * Entropy(Sv)
-			2. Entropy(S) = - Sum_v Pr(v) * log(v) --- (max = (0.5, 1))
+			1. ![](https://latex.codecogs.com/gif.latex?%5Cinline%20Gain%28S%2CA%29%20%3D%20Entropy%28S%29-%5Csum%20_%7Bv%7D%28%5Cfrac%7BS_%7Bv%7D%7D%7BS%7D*Entropy%28S_%7Bv%7D%29%29)
+			2. ![](https://latex.codecogs.com/gif.latex?%5Cinline%20Entropy%28S%29%20%3D%20-%5Csum_%7Bv%7DPr%28v%29%20*%20log%28v%29) when both of the Pr equals 0.5, Entropy has maximum 1
 		2. Split the data using different A values, assign the A values as the decision attribute for the node
 		3. For each node (value of A), create a descendant node
 		4. Sort training examples to leaves
@@ -42,7 +42,7 @@ Decision Tree
 4. Other considerations
 	1. What if continuous attributes --- penalize continuous values
 		1. Information gain will be S, because the sum of each entropy value is ~ 0
-		2. If it is continuous or discrete but with many possible values, it may assign high information gain to those variable - S. So in order to penalize, we change information gain Gain(S,A) to GainRatio(S,A) = Gain(S,A) / SplitInformation(S,A). The splitinformation measures how broadly and evenly partitioned the attribute is.
+		2. If it is continuous or discrete but with many possible values, it may assign high information gain to those variable - S. So in order to penalize, we change information gain ![](https://latex.codecogs.com/gif.latex?%5Cinline%20Gain%28S%2CA%29) to ![](https://latex.codecogs.com/gif.latex?%5Cinline%20GainRatio%28S%2CA%29%20%3D%20%5Cfrac%7BGain%28S%2CA%29%7D%7BSplitInformation%28S%2CA%29%7D). The splitinformation measures how broadly and evenly partitioned the attribute is.
 	2. Does it makes sense to repeat an attribute along the path
 		1. No if has a finite value
 		2. But continuous attribute can be tested with different questions (ranges)
@@ -89,7 +89,7 @@ Decision Tree
 
 	Extreme Cases：
 	Size of Hypothesis Space: 
-	If there is N binary attributes， there will be N！ways of spiting and tree structures。true table will have 2^N rows，the right column (output) on the true table will have 2^(2^N) different bit patterns。Each row represents a path to a leaf
+	If there is N binary attributes, there will be N！ways of spiting and tree structures, true table will have 2^N rows, the right column (output) on the true table will have 2^(2^N) different bit patterns, Each row represents a path to a leaf
 
 
 10. Restriction Bias vs Preference Bias
@@ -98,7 +98,7 @@ Decision Tree
 
 
 11. Runtime
-	1. Construct a balanced tree: O(m*n*logn) --- m=#features n=#samples
+	1. Construct a balanced tree: ![](https://latex.codecogs.com/gif.latex?%5Cinline%20O%28m*n*log%28n%29%29) with m  features and n samples.
 		1. For each features, need to sort the data using this feature(logn), then iterate through to decide which splitting value can maximize the information gain
 	2. Query time: O(logn)
 
