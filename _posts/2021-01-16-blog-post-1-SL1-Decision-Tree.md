@@ -13,9 +13,9 @@ Decision Tree
 
 ### 1. Describe the Representation and Algorithm of DT
 **1. Representation**: 
-node | edge | leaf
---- | --- | --- 
-attribute | attribute values | output
+| node | edge | leaf |
+| --- | --- | --- |
+| attribute | attribute values | output |
 
 **2. Algorithm**:
 1. Pick the best attribute --- roughly split the data into halves
@@ -63,9 +63,9 @@ attribute | attribute values | output
 		2. Need to decide how to report the leaves. Mean is one option.
 		
 ### 5. Decision tree Complexity
-Construct | Query
---- | ---
-O(mnlogn) | O(logn)
+| Construct | Query |
+| --- | --- |
+| O(mnlogn) | O(logn) |
 
 	
 ### 6. Pros and Cons
@@ -87,9 +87,9 @@ O(mnlogn) | O(logn)
 
 
 ### 8. With in Supervised Learning:
-Classification | Regression
---- | ---
-map input to discrete values (most of the time boolean) | map something to continuous values
+| Classification | Regression |
+| --- | --- |
+| map input to discrete values (most of the time boolean) | map something to continuous values |
 
 
 ### 9. Decision Tree for AND, OR, XOR
