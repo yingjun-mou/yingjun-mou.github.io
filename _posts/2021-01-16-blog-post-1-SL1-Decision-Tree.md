@@ -12,18 +12,20 @@ Decision Tree
 ======
 
 ### 1. Describe the Representation and Algorithm of DT
-	**1. Representation**: 
 
-	| node | edge | leaf |
-	| --- | --- | --- |
-	| attribute | attribute values | output |
+**1. Representation**: 
+
+| node | edge | leaf |
+| --- | --- | --- |
+| attribute | attribute values | output |
 
 
-	**2. Algorithm**:
-	1. Pick the best attribute --- roughly split the data into halves
-	2. Ask question about the attribute
-	3. Follow the correct answer path
-	4. Repeat from 1. until the there is only one answer
+**2. Algorithm**:
+
+1. Pick the best attribute --- roughly split the data into halves
+2. Ask question about the attribute
+3. Follow the correct answer path
+4. Repeat from 1. until the there is only one answer
 
 ### 2. Appropriate Problems for DT
 1. Inputs are attribute-value pairs
@@ -65,6 +67,7 @@ Decision Tree
 		2. Need to decide how to report the leaves. Mean is one option.
 		
 ### 5. Decision tree Complexity
+
 | Construct | Query |
 | --- | --- |
 | O(mnlogn) | O(logn) |
@@ -89,6 +92,7 @@ Decision Tree
 
 
 ### 8. With in Supervised Learning:
+
 | Classification | Regression |
 | --- | --- |
 | map input to discrete values (most of the time boolean) | map something to continuous values |
