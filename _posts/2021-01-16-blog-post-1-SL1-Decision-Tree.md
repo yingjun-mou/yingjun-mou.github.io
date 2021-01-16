@@ -16,6 +16,7 @@ Decision Tree
 node | edge | leaf
 --- | --- | --- 
 attribute | attribute values | output
+
 **2. Algorithm**:
 1. Pick the best attribute --- roughly split the data into halves
 2. Ask question about the attribute
