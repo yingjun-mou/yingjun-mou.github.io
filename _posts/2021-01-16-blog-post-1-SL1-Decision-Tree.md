@@ -13,9 +13,22 @@ Decision Tree
 
 ### 1. Describe the Representation and Algorithm of DT
 **1. Representation**: 
+
 | node | edge | leaf |
 | --- | --- | --- |
 | attribute | attribute values | output |
+
+|---
+| Default aligned | Left aligned | Center aligned | Right aligned
+|-|:-|:-:|-:
+| First body part | Second cell | Third cell | fourth cell
+| Second line |foo | **strong** | baz
+| Third line |quux | baz | bar
+|---
+| Second body
+| 2 line
+|===
+| Footer row
 
 **2. Algorithm**:
 1. Pick the best attribute --- roughly split the data into halves
