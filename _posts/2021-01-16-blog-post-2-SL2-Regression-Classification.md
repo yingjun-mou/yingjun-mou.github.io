@@ -11,7 +11,7 @@ tags:
 Regression & Classification
 ======
 
-### 1. Regression
+## 1. Regression
 
 **1. Linear regression:**: 
 1. Always has slope < 1 ---> lean toward mean
