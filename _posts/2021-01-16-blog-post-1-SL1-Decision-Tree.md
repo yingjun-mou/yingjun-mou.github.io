@@ -11,7 +11,7 @@ tags:
 Decision Tree
 ======
 
-### 1. Describe the Representation and Algorithm of DT
+## 1. Describe the Representation and Algorithm of DT
 
 **1. Representation**: 
 
@@ -27,11 +27,11 @@ Decision Tree
 3. Follow the correct answer path
 4. Repeat from 1. until the there is only one answer
 
-### 2. Appropriate Problems for DT
+## 2. Appropriate Problems for DT
 1. Inputs are attribute-value pairs
 2. Outputs are discrte
 
-### 3. Describe each step of ID3 algorithm, its hypothesis space, and its bias
+## 3. Describe each step of ID3 algorithm, its hypothesis space, and its bias
 1. ID3 Algorithm:
 	1. Pick the best attribute A---determine the information gain (reduction of entropy) 
       	1. ![](https://latex.codecogs.com/gif.latex?%5Cinline%20Gain%28S%2CA%29%20%3D%20Entropy%28S%29-%5Csum%20_%7Bv%7D%28%5Cfrac%7BS_%7Bv%7D%7D%7BS%7D*Entropy%28S_%7Bv%7D%29%29)
@@ -50,7 +50,7 @@ Decision Tree
 			2. Prefer correct ones than worse ones
 			3. Prefer shorter tress than longer --- result of good split on top
 			
-### 4. Other considerations
+## 4. Other considerations
 1. What if continuous attributes --- penalize continuous values
     1. Information gain will be S, because the sum of each entropy value is ~ 0
     2. If it is continuous or discrete but with many possible values, it may assign high information gain to those variable - S. So in order to penalize, we change information gain ![](https://latex.codecogs.com/gif.latex?%5Cinline%20Gain%28S%2CA%29) to ![](https://latex.codecogs.com/gif.latex?%5Cinline%20GainRatio%28S%2CA%29%20%3D%20%5Cfrac%7BGain%28S%2CA%29%7D%7BSplitInformation%28S%2CA%29%7D). The splitinformation measures how broadly and evenly partitioned the attribute is.
@@ -66,7 +66,7 @@ Decision Tree
 		1. We cannot use information gain over continuous values. Variance can be used as alternative.
 		2. Need to decide how to report the leaves. Mean is one option.
 		
-### 5. Decision tree Complexity
+## 5. Decision tree Complexity
 
 | Construct | Query |
 | --- | --- |
