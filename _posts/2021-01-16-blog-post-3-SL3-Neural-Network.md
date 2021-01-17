@@ -11,7 +11,7 @@ tags:
 Neural Network
 ======
 
-### 1. Perceptron concepts
+## 1. Perceptron concepts
 
 **1. Concepts**: 
 1. transfer function, activation function, weight, threshold
@@ -32,7 +32,7 @@ Neural Network
 1. Why: to makes the mapping from input to threshold output differentiable (smooth out the plot of the function)
 2. What: sig(a) = 1/1-e^(-a)
 
-### 2. ANN & Describe Back Propagation
+## 2. ANN & Describe Back Propagation
 
 **1.ANN**
 1. Perceptrons is a single-layer neural network
@@ -44,7 +44,7 @@ Neural Network
 3. Calculate the error between the true final output and final output
 4. We pass back the error layer by layer, to adjust the weights using calculated errors
 
-### 3. Bias of ANN
+## 3. Bias of ANN
 **1. Restriction Bias:** *representation power of data structure + set of hypotheses we consider.*
 
 	1. Linear data for perceptron
@@ -61,7 +61,7 @@ Neural Network
 		2. Small: avoid overfitting, reduce complexity
 	2. Prefer simpler and generalizable representations --> occam's razor
 			
-### 4. How to avoid overfitting?
+## 4. How to avoid overfitting?
 
 1. Restrict to a bounded number of layers, nodes, and small values of weights
 2. Use cross valuation to decide the parameters 
