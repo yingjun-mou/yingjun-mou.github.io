@@ -11,7 +11,7 @@ tags:
 Instance Based Learning
 ======
 
-### 1. KNN - K-nearest neighbor
+## 1. KNN - K-nearest neighbor
 
 **1. Two Hyper-parameters**: 
 1. Distance function
@@ -33,7 +33,7 @@ Linear Regression | N           | 1           | 1(two params m,b) | 1
 2. Smoothness ---> averages
 3. All feature matter equally ---> same polynomial
 
-### 2. Curse of Dimensionality
+## 2. Curse of Dimensionality
 
 **1.Definition**
 
