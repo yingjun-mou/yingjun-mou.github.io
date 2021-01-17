@@ -11,7 +11,7 @@ tags:
 Ensemble Learning & Boosting
 ======
 
-### 1. Ensemble Learning
+## 1. Ensemble Learning
 
 **1. Concept**: 
 
@@ -39,7 +39,7 @@ Boosting | give more weight to those dataset it didn't do well | larger weight t
 	1. Ratio of number of mismatches over the total number of examples --- imply every samples are equally important
 	2. Probability that the learner will disagree with the true concept on a particular instance --- Pr(h(x)=c(x))
 
-### 2. AdaBoost
+## 2. AdaBoost
 
 **1.Basic steps**
 
