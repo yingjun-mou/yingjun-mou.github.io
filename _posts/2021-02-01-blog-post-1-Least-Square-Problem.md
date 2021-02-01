@@ -13,7 +13,7 @@ tags:
 Least-Square-Problem
 ======
 
-### 1. Least-Square-Problem
+### Below is a flow of thinking to understanding the LS problem.
 
 **1. Why do we need to learn least square problem?**: 
 
