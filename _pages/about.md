@@ -39,7 +39,7 @@ redirect_from:
   </div>
 
   <div style="float: left; position: relative; width: 320px; padding-left: 5px; padding-top: 5px;">
-    <a href="https://yingjun-mou.github.io/year-archive/"><img src="../images/Icon_travel_red.jpg"/></a>
+    <a href="https://yingjun-mou.github.io/travel/"><img src="../images/Icon_travel_red.jpg"/></a>
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
       <h1 class="icontext" style="font-family: 'Lato'; font-size:54px; color:gray">TRAVEL</h1>
     </div>
