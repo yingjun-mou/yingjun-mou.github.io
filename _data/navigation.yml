@@ -15,6 +15,10 @@ main:
   - title: "Blog"
     url: /year-archive/ 
 
+  - title: "Travel"
+    url: /travel/
+
+
 #   - title: "Guide"
 #     url: /markdown/
 
