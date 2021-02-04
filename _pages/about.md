@@ -32,7 +32,7 @@ redirect_from:
 
 <div style="text-align:center; float: left;">
   <div style="float: left; position: relative; width: 320px; padding-right: 5px; padding-top: 5px;">
-    <a href="https://yingjun-mou.github.io/projects.html#start_Design/"><img src="../images/Icon_design_red.jpg"/></a>
+    <a href="https://yingjun-mou.github.io/projects#start_Design"><img src="../images/Icon_design_red.jpg"/></a>
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
       <h1 class="icontext" style="font-family: 'Lato'; font-size:54px; color:gray">DESIGN</h1>
     </div>
