@@ -6,30 +6,56 @@ author_profile: true
 ---
 
 <style>
-    .icontext:hover {
+    
+    /* Parent Container */
+    .content_img{
+     position: relative;
+     width: 320px;
+     float: left;
+     padding: 5px;
+    }
+    
+    /* Child Text Container */
+    .content_img icontext{
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     background: black;
+     color: white;
+     margin-bottom: 5px;
+     font-family: sans-serif;
+     opacity: 0;
+     visibility: hidden;
+     -webkit-transition: visibility 0s, opacity 0.5s linear; 
+     transition: visibility 0s, opacity 0.5s linear;
+    }
+    
+    .content_img icontext:hover {
         opacity: 1;
         background-color: yellow;
     }
-    .icontext {
+/*     .icontext {
         opacity: 0;
         color:gray
-    }
+    } */
     .icontext_below {
         style="font-family: 'Lato'; 
         font-size:20px;"
     }  
+    
+    
 </style>
 
 <h4>This is normal text - <b>and this is bold text</b>.</h4>
 
 <div style="text-align:center; float: left;">
     
-  <div style="float: left; position: relative; width: 520px;   padding-right: 5px; padding-bottom: 5px;">
+  <div class="content_img">
     <a href="https://yingjun-mou.github.io/projects/"><img src="../images/Icon_plagueA.gif"/></a>
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <h1 class="icontext" style="font-family: 'Lato'; font-size:54px;">CODING</h1>
-      <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, 100%);", class="icontext_below">CODING</h1>
+      <h1 class="icontext" style="font-family: 'Lato'; font-size:54px;">Plague Simulation</h1>      
     </div>
+    <h1 style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, 100%);", class="icontext_below">Plague Simulation</h1>
 <!--     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, 100%);">
       <h1 class="icontext_below">CODING</h1>
     </div> -->
@@ -62,7 +88,7 @@ author_profile: true
 
 <div style="text-align:center; float: left;">
     
-  <div style="float: left; position: relative; width: 520px;   padding-right: 5px; padding-bottom: 5px;">
+  <div style="float: left; position: relative; width: 320px;   padding-right: 5px; padding-bottom: 5px;">
     <a href="https://yingjun-mou.github.io/projects/"><img src="../images/Icon_1IDD.jpg"/></a>
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
       <h1 class="icontext" style="font-family: 'Lato'; font-size:54px;">CODING</h1>
@@ -103,7 +129,7 @@ author_profile: true
 
 <div style="text-align:center; float: left;">
     
-  <div style="float: left; position: relative; width: 520px;   padding-right: 5px; padding-bottom: 5px;">
+  <div style="float: left; position: relative; width: 320px;   padding-right: 5px; padding-bottom: 5px;">
     <a href="https://yingjun-mou.github.io/projects/"><img src="../images/Icon_4Rivera-300x300.jpg"/></a>
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
       <h1 class="icontext" style="font-family: 'Lato'; font-size:54px;">CODING</h1>
