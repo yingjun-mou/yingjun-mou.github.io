@@ -19,11 +19,19 @@ author_profile: true
 
     .section-wrapper {
         width: 100%;
-        margin-bot: 20px;
+        margin-bot: 100px;
         position:relative;
     }
 
     .section-wrapper p {
+        text-align: left;
+        color: #2f4455;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: serif;
+    }
+    
+    .section-wrapper li {
         text-align: left;
         color: #2f4455;
         font-size: 18px;
@@ -72,9 +80,8 @@ author_profile: true
     <h1 class="section-title">Java Interface</h1>
     <p>The interface consist of two parts:</p>
     <p>(1) The GUI for user to select their start and end locations by using the drop-down menus with
-        a campus map of Columbia University showing the shortest paths.
-    </p>
-    <p>(2) A console for user to manually type in the name/ID of the start and end locations, which
+        a campus map of Columbia University showing the shortest paths.<br>
+       (2) A console for user to manually type in the name/ID of the start and end locations, which
         will later pop out the requested shortest route with all the intermediate stops, directions, and the total distance in the unit of feet. 
     </p>
 </div>
@@ -102,7 +109,7 @@ author_profile: true
 
 
 <div class="section-wrapper">
-    <h1 class="section-title">Implementation Methods​</h1>
+    <h1 class="section-title">Implementation Methods</h1>
     <ul>
         <li>
             The application was designed using the model-view-controller (MVC) design pattern.
