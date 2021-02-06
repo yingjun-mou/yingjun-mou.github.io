@@ -19,11 +19,11 @@ redirect_from:
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: yellow;
+        color: #2f4455;
         margin: 5px;
         font-size:54px;
         font-family: sans-serif;
-        opacity: 0.4;
+        opacity: 1.0;
         <!---visibility: hidden;--->
         -webkit-transition: visibility 0s, opacity 0.5s linear; 
         transition: visibility 0s, opacity 0.5s linear;
