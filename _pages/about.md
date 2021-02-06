@@ -21,7 +21,7 @@ redirect_from:
         transform: translate(-50%, -50%);
         color: #2f4455;
         margin: 5px;
-        font-size:54px;
+        font-size:52px;
         font-family: sans-serif;
         opacity: 1.0;
         <!---visibility: hidden;--->
