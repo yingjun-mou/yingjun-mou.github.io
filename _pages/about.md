@@ -19,8 +19,7 @@ redirect_from:
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: yellow;
-        color: gray;
+        color: yellow;
         margin: 5px;
         font-size:54px;
         font-family: sans-serif;
