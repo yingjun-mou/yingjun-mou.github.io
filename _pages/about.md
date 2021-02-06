@@ -23,7 +23,7 @@ redirect_from:
         margin: 5px;
         font-size:54px;
         font-family: sans-serif;
-        opacity: 0.2;
+        opacity: 0.4;
         <!---visibility: hidden;--->
         -webkit-transition: visibility 0s, opacity 0.5s linear; 
         transition: visibility 0s, opacity 0.5s linear;
@@ -36,7 +36,8 @@ redirect_from:
     .content_img:hover .icontext{
         padding: 8px;
         visibility: visible;
-        opacity: 0.7; 
+        opacity: 0.7;
+        color: gray;
         background-color: yellow;
     } 
 </style>
