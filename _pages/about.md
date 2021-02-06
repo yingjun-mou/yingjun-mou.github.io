@@ -25,7 +25,7 @@ redirect_from:
         font-size:54px;
         font-family: sans-serif;
         opacity: 0.2;
-        visibility: hidden;
+        <!---visibility: hidden;--->
         -webkit-transition: visibility 0s, opacity 0.5s linear; 
         transition: visibility 0s, opacity 0.5s linear;
     }
