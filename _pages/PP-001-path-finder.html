@@ -61,8 +61,14 @@ author_profile: true
         display: block;
     }
 
-
-
+    hr.transparent {
+       font-size:80px;
+       color: gray;
+       border: 0;
+       border-top: 1px solid #000;
+       margin: 50px auto; /* For vertical spacing */
+       opacity=0.1;
+    }
 
 
 </style>
@@ -70,6 +76,8 @@ author_profile: true
 
 
 <h1 class="project-title">Campus Shortest Path Finder</h1>
+
+<hr class="transparent" style="margin-bottom: 150px;">
 
 <div class="section-wrapper">
     <h1 class="section-title">Java Interface</h1>
@@ -87,21 +95,25 @@ author_profile: true
 
 <div class="section-wrapper">
     
-    <video class="content_img" autoplay> 
-<!--         height="640" -->
-      <source src="../images/001-Shortest-path-finder/MP4_Pathfinder1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
+    <div style="width: 50%; height: 400px; overflow: hidden;">
+        <video class="content_img" loop="loop" height="800" autoplay="autoplay">        
+          <source src="../images/001-Shortest-path-finder/MP4_Pathfinder1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
     
-    <video class="content_img" autoplay>
-      <source src="../images/001-Shortest-path-finder/MP4_Pathfinder2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-
+    <div style="width: 50%; height: 400px; overflow: hidden;">
+        <video class="content_img" loop="loop" height="800" autoplay="autoplay">
+          <source src="../images/001-Shortest-path-finder/MP4_Pathfinder2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+        
 </div>
 
 <div style="clear:both"></div>
 
+<hr class="transparent" style="margin-bottom: 150px;">
 
 <div class="section-wrapper">
     <h1 class="section-title">Implementation Methods</h1>
@@ -132,16 +144,18 @@ author_profile: true
 
 <div class="section-wrapper">
     <div class="content_img" style="float: left">
-        <img height="100" src="../images/001-Shortest-path-finder/Data_Nodes.JPG"/>
+        <img src="../images/001-Shortest-path-finder/Data_Nodes.JPG" height="100">
         <span class="caption">the csv file of nodes data</span>
     </div>
     <div class="content_img" style="float: left">
-        <img height="100" src="../images/001-Shortest-path-finder/Data_Edges.JPG"/>
+        <img src="../images/001-Shortest-path-finder/Data_Edges.JPG" height="100">
         <span class="caption">the csv file of edges data</span>
     </div>
 </div>
 
 <div style="clear:both"></div>
+
+<hr class="transparent" style="margin-bottom: 150px;">
 
 <div class="section-wrapper">
     <h1 class="section-title">What I learned</h1>
