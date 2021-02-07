@@ -1,0 +1,212 @@
+---
+layout: archive
+title: "MedHotspot"
+permalink: /PP-002-medhotspot/
+author_profile: true
+---
+
+<style>
+
+    .project-title {
+       text-align: center;
+       color: #2f4455;
+       font-size: 48px;
+       font-weight: bold;
+       font-family: sans-serif;
+    }
+
+    .project-subtitle {
+       text-align: center;
+       color: gray;
+       font-size: 24px;
+       font-weight: bold;
+       font-family: sans-serif;
+    }
+    
+    .section-wrapper {
+        width: 100%;
+        margin-bot: 400px;
+        position:relative;
+    }
+
+    .section-wrapper p {
+        text-align: left;
+        color: #2f4455;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: serif;
+    }
+    
+    .section-wrapper li {
+        text-align: left;
+        color: #2f4455;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: serif;
+    }
+    
+    .section_title {
+       text-align: center;
+       color: #2f4455;
+       font-size: 48px;
+       font-weight: bold;
+       font-family: sans-serif;
+    }
+
+
+    /* Parent Container */
+    .content_img{
+     position: relative;
+/*      float: left; */
+     padding: 5px;
+    }
+
+    .content_img .caption {
+        font-size:16px;
+        color: gray;
+        font-family: Graphik;
+        margin-bot: 150px;
+        display: block;
+    }
+
+    hr.transparent {
+       font-size:80px;
+       color: gray;
+       border: 0;
+       border-top: 1px solid #000;
+       margin-bottom: 35px;
+       opacity=0.1;
+    }
+    #wrapper { 
+        width: 920px; 
+        height: auto; 
+        margin: 0 auto;
+    } 
+    #video1 { 
+        width: 47.5%; 
+        height: 300px; 
+        float: left; 
+        margin-right: 5%;
+    } 
+    
+    #img1 { 
+/*         width: 47.5%;  */
+        height: 300px; 
+        float: left; 
+        margin-right: 5%;
+    } 
+
+    #img2 { 
+/*         width: 47.5%;  */
+        height: 300px; 
+        float: left; 
+    }
+
+</style>
+
+
+
+
+
+
+
+<h1 class="project-title">MedHotspot</h1>
+
+<h1 class="project-subtitle">Group Project for CSE6242 Data & Visual Analytics 09/2020</h1>
+
+<hr class="transparent">
+
+<div class="section-wrapper">
+    <h1 class="section-title">Motivation</h1>
+    <p>Medhotspots is a smart search engine and data visualisation interface which is specialized in biomedical research papers. While most of the existing biomedical search tools fail to be user friendly and offer either inadequate or overwhelming search results , our project offer an accurate and concise solution to user's query. Based on the user input keyword, it will get a knowledge graph using multiple APIs such as PubMed. It will then offer a comprehensive visualization with recommendation of related high quality papers. We user experience, we invited 15 people including professional researchers in biomedical fields for the survey and the feedback are positive.
+    </p>
+</div>
+
+
+<!-- width="400" height="300"  -->
+<div id="wrapper"> 
+    <video id="video1" autoplay="autoplay"> 
+        <source type="video/mp4" src="../images/002-MedHotspot/MedHotspot-Demo.mp4" /> 
+    </video>
+    <div style="clear:both"></div>
+</div>
+
+
+<hr class="transparent">
+
+<div class="section-wrapper">
+    <h1 class="section-title">Program Features</h1>
+    <ul>
+        <li>
+            The user will need to type in the search key word. Then, multiple csv files will be generated in the backend which yield the websites in the front. 
+        </li>
+        <li>
+            The homepage has our manifesto: we envision Medhotspot to be the best friend of biomedical researchers. There is also a brief introduction with our logo. 
+        </li>
+        <li>
+            The 2nd page is about the keyword analysis. The purpose of this page is to offer our users some alternatives of searching keyword if he/she wants to learn more about the topic. <br>
+			Wordcloud visualize the frequencies of all the most related words from the 5000 query results. --- while larger size together with the darker color of the text indicate greater frequency.<br>
+			On the side, on the other side, we use horizontal bar chart to further visualize the what are those most related keywords. Hovering the mouse over will show the specific occurrence of the words.<br> 
+			Similarly, there are another two chart analyzing the key words in the paper abstract. 
+        </li>
+        <li>
+            For the 3rd page,  we would like to provide an overview of how different countries and institutions across the globe have studied on the topic. So that when our user want to find a collaborator to work on this topic, he/she would get a better idea of where that potential collaborator would most likely to be.
+        </li>
+        <li>
+            The information of the searched topic was not only shown in the conditionality of space, but also in the dimensionality of time. As we can see on the 4th page, which visualized how the topic was developed in the past few decades. And what journals include this topic the most. While the size indicates the occurrence in the journal, the color indicates the impact factor of the journal.
+        </li>
+        <li>
+            After that, we also offer some recommendations of paper. We implemented the recommendation using k-means with considerations of factors such as the keywords, publish time, and the journal impact factor.
+        </li>
+        <li>
+            Last but not the least, a survey page let users to express their user experience so that we can keep improving our system in the future.
+        </li>
+    </ul>
+</div>
+
+<div id="wrapper"> 
+	
+    <div id=#img1 class="content_img" style="float: left">
+        <img src="../images/002-MedHotspot/1_Currentt-hotspots.png">
+        <span class="caption">current hotspots</span>
+    </div>
+    <div id=#img2 class="content_img" style="float: left">
+        <img src="../images/002-MedHotspot/2_Abstract-word.png">
+        <span class="caption">hotspot analysis based on abstract words</span>
+    </div>
+
+</div>
+
+
+<div id="wrapper"> 
+
+    <div id=#img3 class="content_img" style="float: left">
+        <img src="../images/002-MedHotspot/3_Trend.png">
+        <span class="caption">research trend of stomach cancer</span>
+    </div>
+    <div id=#img4 class="content_img" style="float: left">
+        <img src="../images/002-MedHotspot/3_Trend_covid.png">
+        <span class="caption">research trend of stomach cancer</span>
+    </div>
+
+</div>
+<div style="clear:both"></div>
+
+<hr class="transparent">
+
+<div class="section-wrapper">
+    <h1 class="section-title">Discovery</h1>
+    <p>There are some interesting findings when we compare different serach words, for example, while stomach cancer has a very smooth increasing rate in the past few decades, the coronavirus have never been a hot topic until the pandemic outbreak this year. This shows that some topics are more time-sensitive than others, and the filter of time in MedHotspot successfully dresses the issue.
+    </p>
+</div>
+
+<div id="wrapper"> 
+    <div id=#img5 class="content_img" style="float: left">
+        <img src="../images/002-MedHotspot/4_Institution-map.png">
+        <span class="caption">map of insitutions who are active researching on the topic</span>
+    </div>
+    <div id=#img6 class="content_img" style="float: left">
+        <img src="../images/002-MedHotspot/6_Wiki-Literature-recommendation.png">
+        <span class="caption">literature recommendations</span>
+    </div>
+</div>
