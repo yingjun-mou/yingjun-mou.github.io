@@ -88,10 +88,10 @@ author_profile: true
     }    	
 
     #video1 { 
-        width: 47.5%; 
+        width: 100%; 
 /*         height: 300px;  */
         float: left; 
-        margin-right: 5%;
+        margin: 5%;
     } 
     
     #img1 { 
@@ -130,9 +130,10 @@ author_profile: true
 
 <!-- width="400" height="300"  -->
 <div id="wrapper"> 
-    <video id="video1" autoplay="autoplay"> 
+    <video id="video1" autoplay="autoplay" controls> 
         <source type="video/mp4" src="../images/002-MedHotspot/MedHotspot-Demo.mp4" /> 
     </video>
+    <div style="clear:both"></div>
 </div>
 
 <hr class="transparent">
