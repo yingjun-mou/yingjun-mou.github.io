@@ -66,7 +66,7 @@ author_profile: true
        color: gray;
        border: 0;
        border-top: 1px solid #000;
-       margin-bottom: 50px;
+       margin-bottom: 35px;
        opacity=0.1;
     }
     #wrapper { 
@@ -74,14 +74,14 @@ author_profile: true
         height: auto; 
         margin: 0 auto;
     } 
-    #home1 { 
+    #video1 { 
         width: 47.5%; 
         height: 300px; 
         float: left; 
         margin-right: 5%;
     } 
 
-    #home2 { 
+    #video2 { 
         width: 47.5%; 
         height: 300px; 
         float: left; 
@@ -107,32 +107,11 @@ author_profile: true
 
 
 
-
-
-<!-- <div class="section-wrapper">
-    
-    <div style="width: 50%; height: 400px; overflow: hidden;">
-        <video class="content_img" loop="loop" height="800" autoplay="autoplay">        
-          <source src="../images/001-Shortest-path-finder/MP4_Pathfinder1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </div>
-    
-    <div style="width: 50%; height: 400px; overflow: hidden;">
-        <video class="content_img" loop="loop" height="800" autoplay="autoplay">
-          <source src="../images/001-Shortest-path-finder/MP4_Pathfinder2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </div>
-        
-</div> -->
-
-
 <div id="wrapper"> 
-    <video id="mp41" width="400" height="300" autoplay="autoplay" preload="none"> 
+    <video id="video1" width="400" height="300" autoplay="autoplay" preload="none"> 
         <source type="video/mp4" src="../images/001-Shortest-path-finder/MP4_Pathfinder1.mp4" /> 
     </video>
-    <video id="mp41" width="400" height="300" autoplay="autoplay" preload="none"> 
+    <video id="video2" width="400" height="300" autoplay="autoplay" preload="none"> 
         <source type="video/mp4" src="../images/001-Shortest-path-finder/MP4_Pathfinder2.mp4" /> 
     </video>
     <div style="clear:both"></div>
@@ -168,7 +147,7 @@ author_profile: true
     </ul>
 </div>
 
-<div class="section-wrapper">
+<div id="wrapper"> 
     <div class="content_img" style="float: left">
         <img src="../images/001-Shortest-path-finder/Data_Nodes.JPG" height="100">
         <span class="caption">the csv file of nodes data</span>
