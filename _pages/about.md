@@ -7,19 +7,31 @@ redirect_from:
   - /about.html
 ---
 <style>
-    .bio-paragraph{
-     position: relative;
-     width: 320px;
-     height: 7000px;
-     float: left;
-     padding: 5px;
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create three equal columns that sits next to each other */
+    .column {
+      flex: 33%;
+      max-width: 33%;
+      padding: 0 4px;
+    }
+ 
+    
+    .column .p{
     } 
   
     .content_img{
+     margin-top: 8px;
      position: relative;
      width: 320px;
      float: left;
      padding: 5px;
+     vertical-align: middle;
     } 
 
     .content_img .icontext{
@@ -48,14 +60,36 @@ redirect_from:
         color: gray;
         background-color: yellow;
     } 
+    
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    } 
+    
+    
 </style>
 
 
 
-<div style="text-align:left; float: left;">
+
+<!-- Row 1 -->  
+<div class="row">
+<!-- <div style="text-align:left; float: left;"> -->
   
   <!-- column 1 -->  
-  <div class="bio-paragraph">
+  <div class="column">
     <p>Currently a rising second year Computer Science MS student at Georgia Tech, specialized in Machine Learning.Interests include NLP, Machine Learning, and how we can create        better-structued knolwege graphs to help us learn, teach, and recreate. I am really excited about how NLP can push both our limits of cultural exchange and our limits of        understanding of this complex world.<br>
        Before stuying computer science, I also stuidied Architectural Design in Columbia University and worked as an architectural designer in one of the top architectural firms        in the world Kohn Pedersen Fox designing a supertall office tower. My design background gives me a new way of looking the world, and makes me wonder how AI agent can            learn to be creative in the design process.<br>
        In my life, I enjoy swimming, travelling, and exploring different cultures. Feel free to write me at ymou32@gatech.edu and thanks for stopping by!</p>
@@ -63,7 +97,8 @@ redirect_from:
   
   
   <!-- column 2 -->  
-  <div style="text-align:center; float: left;">
+  <div class="column">
+  <!-- <div class="column" style="text-align:center; float: left;"> -->
   
     <a href='https://yingjun-mou.github.io/projects/'>
       <div class="content_img">
@@ -74,19 +109,6 @@ redirect_from:
       </div>
     </a>  
 
-    <a href='https://yingjun-mou.github.io/publications/'>
-      <div class="content_img">
-        <img src="../images/Icon_research_red.jpg"/>
-        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-          <h1 class="icontext">RESEARCH</h1>      
-        </div>
-      </div>
-    </a> 
-
-  </div>
-
-  <div style="text-align:center; float: left;">
-
     <a href='https://yingjun-mou.github.io/projects/#start_Design'>
       <div class="content_img">
         <img src="../images/Icon_design_red.jpg"/>
@@ -94,8 +116,25 @@ redirect_from:
           <h1 class="icontext">DESIGN</h1>      
         </div>
       </div>  
-    </a> 
+    </a>  
 
+  </div>
+
+  <!-- column 3 -->  
+  <div class="column">
+  <!-- <div class="column" style="text-align:center; float: left;"> -->
+  
+    
+    <a href='https://yingjun-mou.github.io/publications/'>
+      <div class="content_img">
+        <img src="../images/Icon_research_red.jpg"/>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <h1 class="icontext">RESEARCH</h1>      
+        </div>
+      </div>
+    </a>
+    
+    
     <a href='https://yingjun-mou.github.io/travel/'>
       <div class="content_img">
         <img src="../images/Icon_travel_red.jpg"/>
@@ -106,7 +145,6 @@ redirect_from:
     </a> 
 
   </div>  
-  
   
   
   
