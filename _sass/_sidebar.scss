@@ -74,7 +74,7 @@
   vertical-align: top;
   width: 54px; // default is 36px
   // set width only, for non-square avatars
-  // height: 36px;
+  height: 54px;
 
   @include breakpoint($large) {
     display: block;
@@ -84,7 +84,7 @@
 
   img {
     max-width: 175px;
-    border-radius: 0%; // default is 50%
+//     border-radius: 50%; // comment out for a square shape
 
     @include breakpoint($large) {
       padding: 5px;
