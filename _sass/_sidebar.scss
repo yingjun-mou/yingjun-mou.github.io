@@ -70,11 +70,12 @@
    ========================================================================== */
 
 .author__avatar {
-  display: table-cell;
+//   display: table-cell;
+  display: content;
   vertical-align: top;
-  width: 18px; // default is 36px
+  width: 54px; // default is 36px
   // set width only, for non-square avatars
-  height: 18px;
+  height: 54px;
 
   @include breakpoint($large) {
     display: block;
