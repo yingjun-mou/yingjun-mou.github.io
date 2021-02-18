@@ -118,7 +118,7 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-2;   //-5
+  font-size: $type-size-3;   //init=-5 font size of name
 }
 
 .author__bio {
@@ -224,11 +224,11 @@
     display: inline; //block
     margin-top: 5px;
     margin-bottom: 5px;
-    padding-right: 5px; //added to test
+    padding-right: 0px; //added to test
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-7; //init=5
+    font-size: $type-size-6; ////init=-5 font size of name
     text-decoration: none;
 
     &:hover {
