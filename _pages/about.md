@@ -7,6 +7,13 @@ redirect_from:
   - /about.html
 ---
 <style>
+    .bio-paragraph{
+     position: relative;
+     width: 320px;
+     float: left;
+     padding: 5px;
+    } 
+  
     .content_img{
      position: relative;
      width: 320px;
@@ -44,12 +51,12 @@ redirect_from:
 
 
 
-<div style="text-align:center; float: left;">
-  
-  <p>Currently a rising second year Computer Science MS student at Georgia Tech, specialized in Machine Learning.Interests include NLP, Machine Learning, and how we can create        better-structued knolwege graphs to help us learn, teach, and recreate. I am really excited about how NLP can push both our limits of cultural exchange and our limits of        understanding of this complex world.<br>
-     Before stuying computer science, I also stuidied Architectural Design in Columbia University and worked as an architectural designer in one of the top architectural firms        in the world Kohn Pedersen Fox designing a supertall office tower. My design background gives me a new way of looking the world, and makes me wonder how AI agent can learn      to be creative in the design process.<br>
-     In my life, I enjoy swimming, travelling, and exploring different cultures. Feel free to write me at ymou32@gatech.edu and thanks for stopping by!</p>
-
+<div style="text-align:left; float: left;">
+  <div class="bio-paragraph">
+    <p>Currently a rising second year Computer Science MS student at Georgia Tech, specialized in Machine Learning.Interests include NLP, Machine Learning, and how we can create        better-structued knolwege graphs to help us learn, teach, and recreate. I am really excited about how NLP can push both our limits of cultural exchange and our limits of        understanding of this complex world.<br>
+       Before stuying computer science, I also stuidied Architectural Design in Columbia University and worked as an architectural designer in one of the top architectural firms        in the world Kohn Pedersen Fox designing a supertall office tower. My design background gives me a new way of looking the world, and makes me wonder how AI agent can learn      to be creative in the design process.<br>
+       In my life, I enjoy swimming, travelling, and exploring different cultures. Feel free to write me at ymou32@gatech.edu and thanks for stopping by!</p>
+  </div>
 </div>
 
 
