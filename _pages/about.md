@@ -45,36 +45,44 @@ redirect_from:
 
 <div style="text-align:center; float: left;">
   
-  <div class="content_img">
-    <a href="https://yingjun-mou.github.io/projects/"><img src="../images/Icon_coding.png"/></a>
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <h1 class="icontext">CODING</h1>      
+  <a href='https://yingjun-mou.github.io/projects/'>
+    <div class="content_img">
+      <img src="../images/Icon_coding.png"/>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <h1 class="icontext">CODING</h1>      
+      </div>
     </div>
-  </div>  
+  </a>  
   
-  <div class="content_img">
-    <a href="https://yingjun-mou.github.io/publications/"><img src="../images/Icon_research_red.jpg"/></a>
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <h1 class="icontext">RESEARCH</h1>      
+  <a href='https://yingjun-mou.github.io/publications/'>
+    <div class="content_img">
+      <img src="../images/Icon_research_red.jpg"/>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <h1 class="icontext">RESEARCH</h1>      
+      </div>
     </div>
-  </div>
+  </a> 
 
 </div>
 
 <div style="text-align:center; float: left;">
   
-  <div class="content_img">
-    <a href="https://yingjun-mou.github.io/projects/#start_Design"><img src="../images/Icon_design_red.jpg"/></a>
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <h1 class="icontext">DESIGN</h1>      
+  <a href='https://yingjun-mou.github.io/projects/#start_Design'>
+    <div class="content_img">
+      <img src="../images/Icon_design_red.jpg"/>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <h1 class="icontext">DESIGN</h1>      
+      </div>
+    </div>  
+  </a> 
+
+  <a href='https://yingjun-mou.github.io/travel/'>
+    <div class="content_img">
+      <img src="../images/Icon_travel_red.jpg"/>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <h1 class="icontext">TRAVEL</h1>      
+      </div>
     </div>
-  </div>  
-  
-  <div class="content_img">
-    <a href="https://yingjun-mou.github.io/travel/"><img src="../images/Icon_travel_red.jpg"/></a>
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <h1 class="icontext">TRAVEL</h1>      
-    </div>
-  </div>
+  </a> 
 
 </div>
