@@ -70,8 +70,7 @@
    ========================================================================== */
 
 .author__avatar {
-//   display: table-cell;
-  display: content;
+  display: table-cell;
   vertical-align: top;
   width: 54px; // default is 36px
   // set width only, for non-square avatars
@@ -84,7 +83,7 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 250px; // 175px
 //     border-radius: 50%; // comment out for a square shape
 
     @include breakpoint($large) {
@@ -119,7 +118,7 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-2;   //-5
 }
 
 .author__bio {
