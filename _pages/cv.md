@@ -2,7 +2,7 @@
 layout: archive
 title: "CV"
 permalink: /cv/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
 ---
@@ -12,11 +12,11 @@ redirect_from:
 
 Bio
 =====
-I'm currently a rising second year Computer Science MS student at Georgia Tech, specialized in Machine Learning.Interests include NLP, Machine Learning, and how we can create better-structued knolwege graphs to help us learn, teach, and recreate. I am really excited about how NLP can push both our limits of cultural exchange and our limits of understanding of this complex world.
+I'm currently a rising second year Computer Science MS student at <a href="https://www.cc.gatech.edu/">Georgia Tech</a>, specialized in Machine Learning.Interests include NLP, creative AI, and how we can create better-structued knolwege graphs to help us learn, teach, and recreate. I am really excited about how NLP can push both our limits of cultural exchange and our limits of understanding of this complex world.
 
-Before stuying computer science, I also stuidied Architectural Design in Columbia University and worked as an architectural designer in one of the top architectural firms in the world Kohn Pedersen Fox designing a supertall office tower. My design background gives me a new way of looking the world, and makes me wonder how AI agent can learn to be creative in the design process.
+Before stuying computer science, I also stuidied Architectural Design in <a href="https://www.arch.columbia.edu/">Columbia University</a> and worked as an architectural designer in one of the top architectural firms in the world <a href="https://www.kpf.com/">Kohn Pedersen Fox</a> designing a supertall office tower. My unique design background gives me a new way of looking the world, and makes me wonder how AI agents can learn to be creative in the design process.
 
-In my life, I enjoy swimming, travelling, and exploring different cultures. Feel free to write me at ymou32@gatech.edu and thanks for stopping by!
+In my life, I enjoy swimming, <a href="https://yingjun-mou.github.io/travel/">travelling</a>, and exploring different cultures. Feel free to write me at ymou32@gatech.edu and thanks for stopping by!
 
 Education
 ======
