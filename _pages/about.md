@@ -10,6 +10,7 @@ redirect_from:
     .bio-paragraph{
      position: relative;
      width: 320px;
+     height: 7000px;
      float: left;
      padding: 5px;
     } 
@@ -52,55 +53,65 @@ redirect_from:
 
 
 <div style="text-align:left; float: left;">
+  
+  <!-- column 1 -->  
   <div class="bio-paragraph">
     <p>Currently a rising second year Computer Science MS student at Georgia Tech, specialized in Machine Learning.Interests include NLP, Machine Learning, and how we can create        better-structued knolwege graphs to help us learn, teach, and recreate. I am really excited about how NLP can push both our limits of cultural exchange and our limits of        understanding of this complex world.<br>
-       Before stuying computer science, I also stuidied Architectural Design in Columbia University and worked as an architectural designer in one of the top architectural firms        in the world Kohn Pedersen Fox designing a supertall office tower. My design background gives me a new way of looking the world, and makes me wonder how AI agent can learn      to be creative in the design process.<br>
+       Before stuying computer science, I also stuidied Architectural Design in Columbia University and worked as an architectural designer in one of the top architectural firms        in the world Kohn Pedersen Fox designing a supertall office tower. My design background gives me a new way of looking the world, and makes me wonder how AI agent can            learn to be creative in the design process.<br>
        In my life, I enjoy swimming, travelling, and exploring different cultures. Feel free to write me at ymou32@gatech.edu and thanks for stopping by!</p>
+  </div> 
+  
+  
+  <!-- column 2 -->  
+  <div style="text-align:center; float: left;">
+  
+    <a href='https://yingjun-mou.github.io/projects/'>
+      <div class="content_img">
+        <img src="../images/Icon_coding.png"/>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <h1 class="icontext">CODING</h1>      
+        </div>
+      </div>
+    </a>  
+
+    <a href='https://yingjun-mou.github.io/publications/'>
+      <div class="content_img">
+        <img src="../images/Icon_research_red.jpg"/>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <h1 class="icontext">RESEARCH</h1>      
+        </div>
+      </div>
+    </a> 
+
   </div>
+
+  <div style="text-align:center; float: left;">
+
+    <a href='https://yingjun-mou.github.io/projects/#start_Design'>
+      <div class="content_img">
+        <img src="../images/Icon_design_red.jpg"/>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <h1 class="icontext">DESIGN</h1>      
+        </div>
+      </div>  
+    </a> 
+
+    <a href='https://yingjun-mou.github.io/travel/'>
+      <div class="content_img">
+        <img src="../images/Icon_travel_red.jpg"/>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <h1 class="icontext">TRAVEL</h1>      
+        </div>
+      </div>
+    </a> 
+
+  </div>  
+  
+  
+  
+  
 </div>
 
 
 
-<div style="text-align:center; float: left;">
-  
-  <a href='https://yingjun-mou.github.io/projects/'>
-    <div class="content_img">
-      <img src="../images/Icon_coding.png"/>
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <h1 class="icontext">CODING</h1>      
-      </div>
-    </div>
-  </a>  
-  
-  <a href='https://yingjun-mou.github.io/publications/'>
-    <div class="content_img">
-      <img src="../images/Icon_research_red.jpg"/>
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <h1 class="icontext">RESEARCH</h1>      
-      </div>
-    </div>
-  </a> 
 
-</div>
-
-<div style="text-align:center; float: left;">
-  
-  <a href='https://yingjun-mou.github.io/projects/#start_Design'>
-    <div class="content_img">
-      <img src="../images/Icon_design_red.jpg"/>
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <h1 class="icontext">DESIGN</h1>      
-      </div>
-    </div>  
-  </a> 
-
-  <a href='https://yingjun-mou.github.io/travel/'>
-    <div class="content_img">
-      <img src="../images/Icon_travel_red.jpg"/>
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <h1 class="icontext">TRAVEL</h1>      
-      </div>
-    </div>
-  </a> 
-
-</div>
