@@ -16,12 +16,19 @@
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    <!-- {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %} -->
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
+
+    <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a>
+
+    <a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+
+    <a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a>
+
+<!--     <ul class="author__urls social-icons">
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
       {% endif %}
@@ -118,11 +125,11 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
-    </ul>
+    </ul> -->
   </div>
 
   <div>
-    <p class="author__bio">I'm currently a rising second year Computer Science MS student at Georgia Tech, specialized in Machine Learning.Interests include NLP, Machine Learning, and how we can create better-structued knolwege graphs to help us learn, teach, and recreate. I am really excited about how NLP can push both our limits of cultural exchange and our limits of understanding of this complex world. Thank you for stopping by!</p>
+    <p class="author__bio">I'm currently a rising second year Computer Science MS student at Georgia Tech, specialized in Machine Learning. My interests include NLP, Machine Learning, and how we can create better-structued knolwege graphs to help us learn, teach, and recreate.<br>I am really excited about how NLP can push both our limits of cultural exchange and our limits of understanding of this complex world. Thank you for stopping by!</p>
   </div>
 
 </div>
