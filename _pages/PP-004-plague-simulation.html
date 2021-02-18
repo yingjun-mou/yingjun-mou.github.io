@@ -62,6 +62,7 @@ author_profile: true
     }
 
     .content_img .caption {
+        text-align: center;
         font-size:16px;
         color: gray;
         font-family: Graphik;
@@ -209,21 +210,6 @@ author_profile: true
     </ol>
 
 
-    <code>
-        for i in range(num1):
-            for j in range(num2):
-                my_population.infect(i,j,new_infected)
-                #cure rate = 2.5%
-                if random.uniform(0,1) < (2.5/100.0):
-                    my_population.cure(i,j)     
-                
-        for i in range(num1):
-            for j in range(num2):
-                #population fluidity = 10%
-                if random.uniform(0,1) < (10.0/100.0):
-                    my_population.move(i,j)
-    </code>
-
 
     <h2 class="section-title">(B)Rules of Infection</h2>
     <ol>
@@ -339,6 +325,7 @@ author_profile: true
 
 </div>
 
+<hr class="transparent">
 
 <div class="section-wrapper">
     <h2 class="section-title">Conclusion</h2>
@@ -377,6 +364,7 @@ author_profile: true
 
 </div>
 
+<hr class="transparent">
 
 <div class="section-wrapper">
     <h2 class="section-title">Limitation and Extension</h2>
