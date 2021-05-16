@@ -1,5 +1,5 @@
 ---
-title: 'Key financial Statements'
+title: 'Accural accounting'
 date: 2021-05-12
 permalink: /posts/2021/05/Accrual accounting/
 tags:

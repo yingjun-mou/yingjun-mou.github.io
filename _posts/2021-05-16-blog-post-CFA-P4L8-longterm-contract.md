@@ -1,5 +1,5 @@
 ---
-title: 'Key financial Statements'
+title: 'Accounting for Long-term Contract'
 date: 2021-05-16
 permalink: /posts/2021/05/Long-term Contract/
 tags:

@@ -1,5 +1,5 @@
 ---
-title: 'Key financial Statements'
+title: 'Financial element and accounting'
 date: 2021-05-12
 permalink: /posts/2021/05/Financial element and accounting equation/
 tags:
