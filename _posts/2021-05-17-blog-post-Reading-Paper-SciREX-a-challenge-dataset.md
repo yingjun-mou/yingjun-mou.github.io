@@ -19,10 +19,8 @@ Link of the source paper: https://arxiv.org/abs/2005.00512
 ## 1. Problems that the paper is trying to solve?
 
 **1. An end-to-end neural model for Docuement-level IE**: 
-- X
 
 **2. A challenge dataset(SciREX) for train/eval Docuement-level IE**: 
-- X
 
 ## 2. Limitations of current practices?
 
