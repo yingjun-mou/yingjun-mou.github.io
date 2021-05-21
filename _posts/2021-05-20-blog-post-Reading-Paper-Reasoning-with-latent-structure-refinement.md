@@ -14,7 +14,7 @@ categories:
 Reasoning with Latent Structure Refinement for Document-Level Relation Extraction
 ======
 
-[arxi Link](https://arxiv.org/abs/2005.06312) of the source paper
+[arxiv link](https://arxiv.org/abs/2005.06312) of the source paper
 
 ## 1. Contributions of this paper:
 
@@ -75,10 +75,10 @@ The question is what is the relation between "Yulia Tymoshenko" and "Ukranian". 
 - Use GNN, more specifically GCN(convolutional).
 - A graph G with n nodes can be represented as an n x n adjacency matrix A, which induced by previous structure induction
 - A node i at level l will have representation u<sup>l</sup><sub>i</sub>, which can be computed using u<sup>l-1</sup><sub>i</sub>
-- ![](https://latex.codecogs.com/gif.latex?\inline&space;u_{i}^{l}&space;=&space;\sigma&space;(\sum_{j=1}^n&space;A_{ij}W^lu_j^{l-1}&space;&plus;&space;b^l))
+- ![](https://latex.codecogs.com/gif.latex?\inline&space;u_{i}^{l}&space;=&space;\sigma&space;(\sum_{j=1}^n&space;A_{ij}W^lu_j^{l-1}&space;&plus;&space;b^l%29)
 5. Iterative refinement
 - Will do refinement of structure N times, by stacking N blocks of the dynamic reasoners. 
 - The induced structure will be more and more refine as more and more information aggregated
 6. Classifier
 - After N times refinements, we will get final representations of all nodes. We will compute the probability of these two entities belong to a certain relation r using a bilinear function.
-- ![](https://latex.codecogs.com/gif.latex?\inline&space;P(r|e_i,&space;e_j)&space;=&space;\sigma&space;(e_i^TW_ee_j&space;&plus;&space;b_e)_r)
+- ![](https://latex.codecogs.com/gif.latex?\inline&space;P(r|e_i,&space;e_j%29&space;=&space;\sigma&space;(e_i^TW_ee_j&space;&plus;&space;b_e%29_r)
