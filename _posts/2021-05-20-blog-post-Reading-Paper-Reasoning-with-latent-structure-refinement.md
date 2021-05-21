@@ -81,4 +81,4 @@ The question is what is the relation between "Yulia Tymoshenko" and "Ukranian". 
 - The induced structure will be more and more refine as more and more information aggregated
 6. Classifier
 - After N times refinements, we will get final representations of all nodes. We will compute the probability of these two entities belong to a certain relation r using a bilinear function.
-- ![](https://latex.codecogs.com/gif.latex?\inline&space;P(r|e_i,&space;e_j%29&space;=&space;\sigma&space;(e_i^TW_ee_j&space;&plus;&space;b_e%29_r)
+- ![](https://latex.codecogs.com/gif.latex?\inline&space;P(r\|e_i,&space;e_j%29&space;=&space;\sigma&space;(e_i^TW_ee_j&space;&plus;&space;b_e%29_r)
