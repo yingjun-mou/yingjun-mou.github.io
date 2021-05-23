@@ -27,20 +27,21 @@ Tableau country maps overlay with more specific locations
 - Right click meassure tab
 - Click **Create calculated field**
 - Give it a name such as color calculation, for the function, types:
-'''
-IF SUM([Time]) == 5 then 'years'
+```
+IF SUM([Time]) >= 5 then 'years'
 ELSEIF SUM([Time]) == 4 then 'months'
 ELSEIF SUM([Time]) == 3 then 'weeks'
 ELSEIF SUM([Time]) == 2 then 'days'
 ELSEIF SUM([Time]) == 1 then 'passby'
 ELSEIF SUM([Time]) == NULL then 'no'
 END
-'''
+```
+
 
 ## 4. Apply the color gradient:
 - Drag Color Calculation to *Color*
 - Tweak the color, personally, I found the following parameters to be the best
-1. Opacity = 50%
+1. Opacity = 40%
 2. year = RGB(170,0,0)
 3. months = RGB(206,68,68)
 4. weeks = RGB(224,136,136)
@@ -53,6 +54,11 @@ END
 - Drag *Name* to the **Detail** field.
 
 ## 6. Show the specific city/attraction name:
-- Drag the Geo property *City* to the top left corner of the Sheet, it will show up as **Add a Marks Layer**
-- Make sure the Columns/Rows are based on the Long/Lat of Cities, not the Countries.
-- Make sure each data entry have Long/Lat
+- Duplicate Lattitude in the Rows
+- For the new map, there will be 4 properties:
+1. Country Name - as Detail
+2. City - as Detail
+3. Lat(of city) - as Detail
+4. Long(of city) - as Detail
+- Apply **Dual Axis** to merge the two maps
+

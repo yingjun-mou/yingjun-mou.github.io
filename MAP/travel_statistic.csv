@@ -1,0 +1,334 @@
+Code,CountryName,ColorCode,Time,City,Place,Lat,Long
+AF,Afghanistan,,,,,,
+AX,Aland Islands,,,,,,
+AL,Albania,,,,,,
+DZ,Algeria,,,,,,
+AS,American Samoa,,,,,,
+AD,Andorra,,,,,,
+AO,Angola,,,,,,
+AI,Anguilla,,,,,,
+AQ,Antarctica,,,,,,
+AG,Antigua and Barbuda,,,,,,
+AR,Argentina,,,,,,
+AM,Armenia,,,,,,
+AW,Aruba,,,,,,
+AU,Australia,weeks,3,Sydney,,-33.84336309,151.2230723
+AU,Australia,weeks,3,Brisbane,,-27.46362955,153.0279569
+AU,Australia,weeks,3,Cairns,,-16.8947176,145.7487981
+AT,Austria,,,,,,
+AZ,Azerbaijan,,,,,,
+BS,Bahamas,,,,,,
+BH,Bahrain,,,,,,
+BD,Bangladesh,,,,,,
+BB,Barbados,,,,,,
+BY,Belarus,,,,,,
+BE,Belgium,,,,,,
+BZ,Belize,,,,,,
+BJ,Benin,,,,,,
+BM,Bermuda,,,,,,
+BT,Bhutan,,,,,,
+BO,"Bolivia, Plurinational State of",,,,,,
+BQ,"Bonaire, Sint Eustatius and Saba",,,,,,
+BA,Bosnia and Herzegovina,,,,,,
+BW,Botswana,,,,,,
+BV,Bouvet Island,,,,,,
+BR,Brazil,weeks,3,Brasilia,,-15.79798632,-47.87549052
+BR,Brazil,weeks,3,Sï¿½ï¿½ï¿,,-23.54638847,-46.6449264
+BR,Brazil,weeks,3,Rio de Janeiro,,-22.95044031,-43.21080674
+IO,British Indian Ocean Territory,,,,,,
+BN,Brunei Darussalam,,,,,,
+BG,Bulgaria,,,,,,
+BF,Burkina Faso,,,,,,
+BI,Burundi,,,,,,
+KH,Cambodia,,,,,,
+CM,Cameroon,,,,,,
+CA,Canada,passby,1,Toronto,,43.67774086,-79.62473387
+CV,Cape Verde,,,,,,
+KY,Cayman Islands,,,,,,
+CF,Central African Republic,,,,,,
+TD,Chad,,,,,,
+CL,Chile,,,,,,
+CN,China,years,5,Zhuhai,Home,22.27817514,113.5759248
+CN,China,years,5,Shenzhen,Home,22.54984342,114.0332309
+CN,China,years,5,Guangzhou,,23.11591623,113.3366223
+CN,China,years,5,Foshan,,23.02933413,113.1138129
+CN,China,years,5,Dongguan,,23.03981246,113.7490621
+CN,China,years,5,Huizhou,,22.79087345,114.4576243
+CN,China,years,5,Zhaoqing,,23.08711639,112.4807619
+CN,China,years,5,Qingyuan,,23.68017552,113.052051
+CN,China,years,5,Shaoguan,,24.81083924,113.5780216
+CN,China,years,5,Heyuan,,23.73419552,114.7018767
+CN,China,years,5,Yangjiang,,21.86587314,111.9835938
+CN,China,years,5,Zhanjiang,,21.26616073,110.365207
+CN,China,years,5,Beihai,,21.48381766,109.1093323
+CN,China,years,5,Yulin,,22.62868857,110.1516488
+CN,China,years,5,Nanning,,22.81494586,108.3680114
+CN,China,years,5,Guilin,,25.23490975,110.1815385
+CN,China,years,5,Ganzhou,,25.83156215,114.9382753
+CN,China,years,5,Ji'an,,27.08687901,114.9645073
+CN,China,years,5,Jinggangshan,,26.74919988,114.2879974
+CN,China,years,5,Wuhan,,30.59180566,114.3304095
+CN,China,years,5,Hangzhou,,30.18836881,120.2646722
+CN,China,years,5,Shanghai,,31.29121739,121.4903044
+CN,China,years,5,Suzhou,,31.29974813,120.5727426
+CN,China,years,5,Wuxi,,31.48591197,120.3105814
+CN,China,years,5,Nanjing,,32.06288804,118.8310897
+CN,China,years,5,Kunming,,24.88996613,102.8275562
+CN,China,years,5,Dali,,25.59840799,100.2719548
+CN,China,years,5,Chuxiong,,25.04657929,101.5308373
+CN,China,years,5,Chongqing,,29.56391375,106.5881655
+CN,China,years,5,Qingdao,,36.07693846,120.3235962
+CN,China,years,5,Yantai,,37.47078613,121.4414873
+CN,China,years,5,Beijing,,39.90949785,116.3975467
+CN,China,years,5,Tianjin,,39.16942583,117.2021074
+CN,China,years,5,Dalian,,38.89343994,121.5853397
+CN,China,years,5,Shenyang,,41.80514434,123.4602163
+CN,China,years,5,Haikou,,20.04543648,110.2007553
+CN,China,years,5,Sanya,,18.28819849,109.4705077
+CX,Christmas Island,,,,,,
+CC,Cocos (Keeling) Islands,,,,,,
+CO,Colombia,,,,,,
+KM,Comoros,,,,,,
+CG,Congo,,,,,,
+CD,"Congo, the Democratic Republic of the",,,,,,
+CK,Cook Islands,,,,,,
+CR,Costa Rica,,,,,,
+CI,Cote d'Ivoire,,,,,,
+HR,Croatia,,,,,,
+CU,Cuba,,,,,,
+CW,Curacao,,,,,,
+CY,Cyprus,,,,,,
+CZ,Czech Republic,,,,,,
+DK,Denmark,,,,,,
+DJ,Djibouti,,,,,,
+DM,Dominica,,,,,,
+DO,Dominican Republic,,,,,,
+EC,Ecuador,,,,,,
+EG,Egypt,,,,,,
+SV,El Salvador,,,,,,
+GQ,Equatorial Guinea,,,,,,
+ER,Eritrea,,,,,,
+EE,Estonia,,,,,,
+ET,Ethiopia,,,,,,
+FK,Falkland Islands (Malvinas),,,,,,
+FO,Faroe Islands,,,,,,
+FJ,Fiji,,,,,,
+FI,Finland,,,,,,
+FR,France,weeks,3,Paris,,48.86199983,2.292812684
+FR,France,weeks,3,Dijon,,47.32316101,5.044289629
+GF,French Guiana,,,,,,
+PF,French Polynesia,,,,,,
+TF,French Southern Territories,,,,,,
+GA,Gabon,,,,,,
+GM,Gambia,,,,,,
+GE,Georgia,,,,,,
+DE,Germany,days,2,Berlin,,52.53158101,13.37800747
+DE,Germany,days,2,Munich,,48.13537658,11.58450366
+GH,Ghana,,,,,,
+GI,Gibraltar,,,,,,
+GR,Greece,days,2,Athens,,37.97364841,23.7240908
+GR,Greece,days,2,Aegina,,37.74408393,23.50233255
+GL,Greenland,,,,,,
+GD,Grenada,,,,,,
+GP,Guadeloupe,,,,,,
+GU,Guam,,,,,,
+GT,Guatemala,,,,,,
+GG,Guernsey,,,,,,
+GN,Guinea,,,,,,
+GW,Guinea-Bissau,,,,,,
+GY,Guyana,,,,,,
+HT,Haiti,,,,,,
+HM,Heard Island and McDonald Islands,,,,,,
+VA,Holy See (Vatican City State),weeks,3,Vatican City,,41.90253863,12.45397092
+HN,Honduras,,,,,,
+HK,Hong Kong,months,4,Hong Kong,,22.28321313,114.1690665
+HU,Hungary,,,,,,
+IS,Iceland,,,,,,
+IN,India,,,,,,
+ID,Indonesia,,,,,,
+IR,"Iran, Islamic Republic of",,,,,,
+IQ,Iraq,,,,,,
+IE,Ireland,,,,,,
+IM,Isle of Man,,,,,,
+IL,Israel,,,,,,
+IT,Italy,months,4,Rome,,41.90845256,12.46611426
+IT,Italy,months,4,Lido di Ostia,Ostia Antica,41.75799989,12.29255714
+IT,Italy,months,4,Florence,,43.77448306,11.24474203
+IT,Italy,months,4,Pienza,,43.07701502,11.67836187
+IT,Italy,months,4,Assisi,,43.07072177,12.61754638
+IT,Italy,months,4,Perugia,,43.11226387,12.38886971
+IT,Italy,months,4,Cerveteri,Necropolis Banditaccia,42.00615655,12.10043191
+IT,Italy,months,4,Matera,,40.66405875,16.61388555
+IT,Italy,months,4,Salerno,,40.67429558,14.75360677
+IT,Italy,months,4,Vietri sul Mare,,40.66827872,14.72895861
+IT,Italy,months,4,Napoli,,40.85183468,14.26307932
+IT,Italy,months,4,Vesuvius,,40.82289659,14.42886733
+IT,Italy,months,4,Pompeii,,40.74819561,14.48745506
+IT,Italy,months,4,Milan,,45.48710254,9.205586286
+IT,Italy,months,4,Venice,,45.44082641,12.34060372
+IT,Italy,months,4,Vicenza,,45.54888348,11.54660847
+IT,Italy,months,4,Verona,,45.43998396,10.98746913
+JM,Jamaica,,,,,,
+JP,Japan,months,4,Tokyo,,35.66285791,139.7307755
+JP,Japan,months,4,Osaka,,34.66897045,135.5013507
+JP,Japan,months,4,Yokohama,,35.44951512,139.6465506
+JP,Japan,months,4,Kyoto,,35.03717614,135.7380522
+JP,Japan,months,4,Mt. Fuji,,35.37424177,138.7289165
+JE,Jersey,,,,,,
+JO,Jordan,,,,,,
+KZ,Kazakhstan,,,,,,
+KE,Kenya,,,,,,
+KI,Kiribati,,,,,,
+KP,"Korea, Democratic People's Republic of",,,,,,
+KR,"Korea, Republic of",,,,,,
+KW,Kuwait,,,,,,
+KG,Kyrgyzstan,,,,,,
+LA,Lao People's Democratic Republic,,,,,,
+LV,Latvia,,,,,,
+LB,Lebanon,,,,,,
+LS,Lesotho,,,,,,
+LR,Liberia,,,,,,
+LY,Libya,,,,,,
+LI,Liechtenstein,days,2,Liechtenstein,,47.13992002,9.524004247
+LT,Lithuania,,,,,,
+LU,Luxembourg,,,,,,
+MO,Macao,years,5,Macao,,22.19888243,113.5405587
+MK,"Macedonia, the Former Yugoslav Republic of",,,,,,
+MG,Madagascar,,,,,,
+MW,Malawi,,,,,,
+MY,Malaysia,days,2,Kuala Lumpur,,3.160785825,101.708959
+MY,Malaysia,days,2,Malacca,,2.204099985,102.259397
+MV,Maldives,,,,,,
+ML,Mali,,,,,,
+MT,Malta,,,,,,
+MH,Marshall Islands,,,,,,
+MQ,Martinique,,,,,,
+MR,Mauritania,,,,,,
+MU,Mauritius,,,,,,
+YT,Mayotte,,,,,,
+MX,Mexico,weeks,3,Mexico City,,19.44701958,-99.13744512
+MX,Mexico,weeks,3,Cancun,,21.12299721,-86.75411488
+MX,Mexico,weeks,3,Chichï¿½ï¿½n,,20.68450956,-88.56710495
+MX,Mexico,weeks,3,Guanajuato,,21.02346748,-101.24811
+FM,"Micronesia, Federated States of",,,,,,
+MD,"Moldova, Republic of",,,,,,
+MC,Monaco,,,,,,
+MN,Mongolia,,,,,,
+ME,Montenegro,,,,,,
+MS,Montserrat,,,,,,
+MA,Morocco,,,,,,
+MZ,Mozambique,,,,,,
+MM,Myanmar,,,,,,
+NA,Namibia,,,,,,
+NR,Nauru,,,,,,
+NP,Nepal,,,,,,
+NL,Netherlands,days,2,Amsterdam,,52.3845478,4.901316878
+NC,New Caledonia,,,,,,
+NZ,New Zealand,,,,,,
+NI,Nicaragua,,,,,,
+NE,Niger,,,,,,
+NG,Nigeria,,,,,,
+NU,Niue,,,,,,
+NF,Norfolk Island,,,,,,
+MP,Northern Mariana Islands,,,,,,
+NO,Norway,,,,,,
+OM,Oman,,,,,,
+PK,Pakistan,,,,,,
+PW,Palau,,,,,,
+PS,"Palestine, State of",,,,,,
+PA,Panama,,,,,,
+PG,Papua New Guinea,,,,,,
+PY,Paraguay,,,,,,
+PE,Peru,,,,,,
+PH,Philippines,,,,,,
+PN,Pitcairn,,,,,,
+PL,Poland,,,,,,
+PT,Portugal,,,,,,
+PR,Puerto Rico,,,,,,
+QA,Qatar,,,,,,
+RE,Reunion,,,,,,
+RO,Romania,,,,,,
+RU,Russian Federation,,,,,,
+RW,Rwanda,,,,,,
+BL,Saint Barthelemy,,,,,,
+SH,"Saint Helena, Ascension and Tristan da Cunha",,,,,,
+KN,Saint Kitts and Nevis,,,,,,
+LC,Saint Lucia,,,,,,
+MF,Saint Martin (French part),,,,,,
+PM,Saint Pierre and Miquelon,,,,,,
+VC,Saint Vincent and the Grenadines,,,,,,
+WS,Samoa,,,,,,
+SM,San Marino,,,,,,
+ST,Sao Tome and Principe,,,,,,
+SA,Saudi Arabia,,,,,,
+SN,Senegal,,,,,,
+RS,Serbia,,,,,,
+SC,Seychelles,,,,,,
+SL,Sierra Leone,,,,,,
+SG,Singapore,days,2,Singapore,,1.3579295,103.8586568
+SX,Sint Maarten (Dutch part),,,,,,
+SK,Slovakia,,,,,,
+SI,Slovenia,,,,,,
+SB,Solomon Islands,,,,,,
+SO,Somalia,,,,,,
+ZA,South Africa,,,,,,
+GS,South Georgia and the South Sandwich Islands,,,,,,
+SS,South Sudan,,,,,,
+ES,Spain,,,,,,
+LK,Sri Lanka,,,,,,
+SD,Sudan,,,,,,
+SR,Suriname,,,,,,
+SJ,Svalbard and Jan Mayen,,,,,,
+SZ,Swaziland,,,,,,
+SE,Sweden,,,,,,
+CH,Switzerland,days,2,Zurich,Lake Lucerne,47.02699498,8.436092214
+SY,Syrian Arab Republic,,,,,,
+TW,Taiwan,years,5,Taipei,,25.05553462,121.5722482
+TJ,Tajikistan,,,,,,
+TZ,"Tanzania, United Republic of",,,,,,
+TH,Thailand,days,2,Bangkok,,13.75779062,100.4971042
+TH,Thailand,days,2,Pattaya,,12.9319712,100.8791204
+TL,Timor-Leste,,,,,,
+TG,Togo,,,,,,
+TK,Tokelau,,,,,,
+TO,Tonga,,,,,,
+TT,Trinidad and Tobago,,,,,,
+TN,Tunisia,weeks,3,Tunis,,36.79894871,10.17141332
+TN,Tunisia,weeks,3,Sousse,,35.82783931,10.63874336
+TN,Tunisia,weeks,3,Carthage,Antonine Baths,36.85436083,10.3350187
+TR,Turkey,,,,,,
+TM,Turkmenistan,,,,,,
+TC,Turks and Caicos Islands,,,,,,
+TV,Tuvalu,,,,,,
+UG,Uganda,,,,,,
+UA,Ukraine,,,,,,
+AE,United Arab Emirates,,,,,,
+GB,United Kingdom,,,,,,
+US,United States,years,5,New York,KPF,40.75449517,-73.98185566
+US,United States,years,5,Troy,RPI,42.72990464,-73.6789635
+US,United States,years,5,Albany,Empire State Plaza,42.65027355,-73.75989267
+US,United States,years,5,Atlanta,GT,33.77580506,-84.396285
+US,United States,years,5,Savannah,Fort Pulaski,32.02986174,-80.89067062
+US,United States,years,5,Boston,,42.36197463,-71.04101833
+US,United States,years,5,Chicago,,41.8967992,-87.62214014
+US,United States,years,5,Washington D.C.,,38.88976093,-77.05003245
+US,United States,years,5,Philadelphia,,39.97037666,-75.18197053
+US,United States,years,5,Mt. Pocono,,41.04232345,-75.35132792
+US,United States,years,5,New Haven,Yale,41.31167821,-72.9304717
+US,United States,years,5,New Brunswick,,40.47890575,-74.42539583
+US,United States,years,5,Baltimore,Inner Harbor,39.28574111,-76.60829477
+US,United States,years,5,Miami,,25.78138192,-80.1893373
+US,United States,years,5,Key West,,24.56510636,-81.72852901
+UM,United States Minor Outlying Islands,,,,,,
+UY,Uruguay,,,,,,
+UZ,Uzbekistan,,,,,,
+VU,Vanuatu,,,,,,
+VE,"Venezuela, Bolivarian Republic of",,,,,,
+VN,Viet Nam,,,,,,
+VG,"Virgin Islands, British",,,,,,
+VI,"Virgin Islands, U.S.",,,,,,
+WF,Wallis and Futuna,,,,,,
+EH,Western Sahara,,,,,,
+YE,Yemen,,,,,,
+ZM,Zambia,,,,,,
+ZW,Zimbabwe,,,,,,
