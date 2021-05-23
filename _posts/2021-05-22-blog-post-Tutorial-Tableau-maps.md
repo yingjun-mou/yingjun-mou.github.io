@@ -62,3 +62,10 @@ END
 4. Long(of city) - as Detail
 - Apply **Dual Axis** to merge the two maps
 
+
+## 7. Put map into a Dashboard:
+- Drag Sheet to a new Dashboard
+- **Map** -> **Options** -> Uncheck **Allow pan and zoom**
+- Hide unnecessary visual elements
+- Save to Tableau Public
+
