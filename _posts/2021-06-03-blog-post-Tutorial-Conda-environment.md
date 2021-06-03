@@ -20,9 +20,7 @@ Conda environment management
 ## 1. Important commands
 
 1. Check existing environments
-```
-conda env list
-```
+`conda env list`
 - Warning: env before list, if you type conda list env, if will show the packages installed in one of the environments.
 
 2. Create an environment
@@ -97,3 +95,6 @@ conda list -n myenv scipy
 - pip is a *package manager* only for Python
 - venv is a *environment manager* only for Python
 - conda is both a *package and environment manager* and is language agnostic(works with any languages)
+
+## 3. Why it always showing module not found, even I have already installed it?
+- Remember to use 
