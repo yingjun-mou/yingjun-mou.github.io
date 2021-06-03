@@ -1,14 +1,14 @@
 ---
 title: 'Conda environment management'
 date: 2021-06-03
-permalink: /posts/2021/05/Conda environment/
+permalink: /posts/2021/06/Conda environment/
 tags:
   - Virtual Environment
   - Conda
 categories:
   - Coding
   - Tutorial
-code-block-font-size: \large
+code-block-font-size: \huge
 ---
 
 
@@ -43,7 +43,7 @@ conda create -n myenv python=3.6
 conda create -n myenv scipy=0.15.0 numpy 
 
 ```
-- we can also install packages after creating environment.TEST!!!!!!!!!!
+- we can also install packages after creating environment.
 
 ```
 conda install -n myenv scipy

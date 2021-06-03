@@ -13,7 +13,7 @@ main:
     url: /projects/#start_Design
   
   - title: "Blog"
-    url: /year-archive/ 
+    url: /categories/ 
 
   - title: "Travel"
     url: /travel/
