@@ -97,4 +97,4 @@ conda list -n myenv scipy
 - conda is both a *package and environment manager* and is language agnostic(works with any languages)
 
 ## 3. Why it always showing module not found, even I have already installed it?
-- Remember to use 
+- Remember to use `conda install` instead of `pip install`
