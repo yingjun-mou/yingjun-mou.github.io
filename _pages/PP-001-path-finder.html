@@ -1,0 +1,199 @@
+---
+layout: archive
+title: "Projects"
+permalink: /PP-001-path-finder/
+author_profile: true
+---
+
+<style>
+
+    .project-title {
+       text-align: center;
+       color: #2f4455;
+       font-size: 48px;
+       font-weight: bold;
+       font-family: sans-serif;
+    }
+
+    .project-subtitle {
+       text-align: center;
+       color: gray;
+       font-size: 24px;
+       font-weight: bold;
+       font-family: sans-serif;
+    }
+    
+    .section-wrapper {
+        width: 100%;
+        margin-bot: 400px;
+        position:relative;
+    }
+
+    .section-wrapper p {
+        text-align: left;
+        color: #2f4455;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: serif;
+    }
+    
+    .section-wrapper li {
+        text-align: left;
+        color: #2f4455;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: serif;
+    }
+    
+    .section_title {
+       text-align: center;
+       color: #2f4455;
+       font-size: 48px;
+       font-weight: bold;
+       font-family: sans-serif;
+    }
+
+
+    /* Parent Container */
+    .content_img{
+     position: relative;
+/*      float: left; */
+     padding: 5px;
+    }
+
+    .content_img .caption {
+        font-size:16px;
+        color: gray;
+        font-family: Graphik;
+        margin-bot: 150px;
+        display: block;
+    }
+
+    hr.transparent {
+       font-size:80px;
+       color: gray;
+       border: 0;
+       border-top: 1px solid #000;
+       margin-bottom: 35px;
+       opacity=0.1;
+    }
+    #wrapper { 
+        width: 920px; 
+        height: auto; 
+        margin: 0 auto;
+    } 
+    #video1 { 
+        width: 47.5%; 
+        height: 300px; 
+        float: left; 
+        margin-right: 5%;
+    } 
+
+    #video2 { 
+        width: 47.5%; 
+        height: 300px; 
+        float: left; 
+    }
+    
+    #img1 { 
+/*         width: 47.5%;  */
+        height: 300px; 
+        float: left; 
+        margin-right: 5%;
+    } 
+
+    #img2 { 
+/*         width: 47.5%;  */
+        height: 300px; 
+        float: left; 
+    }
+
+</style>
+
+
+
+<h1 class="project-title">Campus Shortest Path Finder</h1>
+
+<h1 class="project-subtitle">Individual Personal Project   02/2017</h1>
+
+<hr class="transparent">
+
+<div class="section-wrapper">
+    <h1 class="section-title">Java Interface</h1>
+    <p>The interface consist of two parts:</p>
+    <p>(1) The GUI for user to select their start and end locations by using the drop-down menus with
+        a campus map of Columbia University showing the shortest paths.<br>
+       (2) A console for user to manually type in the name/ID of the start and end locations, which
+        will later pop out the requested shortest route with all the intermediate stops, directions, and the total distance in the unit of feet. 
+    </p>
+</div>
+
+
+
+<div id="wrapper"> 
+    <video id="video1" width="400" height="300" autoplay="autoplay"> 
+        <source type="video/mp4" src="../images/001-Shortest-path-finder/MP4_Pathfinder1.mp4" /> 
+    </video>
+    <video id="video2" width="400" height="300" autoplay="autoplay"> 
+        <source type="video/mp4" src="../images/001-Shortest-path-finder/MP4_Pathfinder2.mp4" /> 
+    </video>
+    <div style="clear:both"></div>
+</div>
+
+
+<hr class="transparent">
+
+<div class="section-wrapper">
+    <h1 class="section-title">Implementation Methods</h1>
+    <ul>
+        <li>
+            The application was designed using the model-view-controller (MVC) design pattern.
+            It consists of three parts: (1) Model, (2) View, and (3) Controller.
+        </li>
+        <li>
+            The model consists of the classes that represent data, as well as the classes that load, store, look up, or operate on data.
+            These classes know nothing about what information is displayed to the user and how it’s formatted. Instead, it only takes charge of:
+            (a) reading, parsing, and storing data (b) providing methods for the view to access data (c) Performing computations or operations
+            involving the data and returning the result (d) updating the in-memory state (e) writing to the data source
+        </li>
+        <li>
+            The view implements the user interface. It stores very little data and perform very light computation. It rely on the model for data storage and manipulation.
+            The view decides how the user sees and interacts with this data. In this case, GUI with drop-down menus and map and a textual interface were used at the same time.
+        </li>
+        <li>
+            The controller listens to user input. Based on the user’s keystrokes, mouse clicks, the controller determines their intentions and dispatches to the appropriate methods in the model or view.
+        </li>
+        <li>
+            The model parses two input csv files: CU_map_data_Nodes and CU_map_data_Edges, and builds a graph that represents the Columbia University campus map.
+            And it uses Dijkstra’s Algorithm to find the shortest route between two buildings.
+        </li>
+    </ul>
+</div>
+
+<div id="wrapper"> 
+    <div class="content_img" style="float: left">
+        <img id="img1" src="../images/001-Shortest-path-finder/Data_Nodes.JPG">
+        <span class="caption">the csv file of nodes data</span>
+    </div>
+    <div class="content_img" style="float: left">
+        <img id="img2" src="../images/001-Shortest-path-finder/Data_Edges.JPG">
+        <span class="caption">the csv file of edges data</span>
+    </div>
+</div>
+
+<div style="clear:both"></div>
+
+<hr class="transparent">
+
+<div class="section-wrapper">
+    <h1 class="section-title">What I learned</h1>
+    <ul>
+        <li>Implementing Graph data structure and Dijkstra’s Algorithm using Java</li>
+        <li>Java specifications, custom abstract data types(ADT), and abstract functions</li>
+        <li>Java testing using Eclipse IDE</li>
+        <li>Polymorphism and subtyping</li>
+        <li>Parametric polymorphism and Java generics</li>
+        <li>Refactoring</li>
+        <li>Java GUI programming and Event-driven programming</li>
+    </ul>
+</div>
