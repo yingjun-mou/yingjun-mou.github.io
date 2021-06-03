@@ -1,29 +1,26 @@
-# main links
+# main links links
 main:
-  # - title: "Research"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # # - title: "About"
-  # #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Blogs"
-  #   url: /year-archive/
-  # # - title: "Sample Collections"
-  # #   url: /collection-archive/
-  # # - title: "Sitemap"
-  # #   url: /sitemap/
-  - title: "Research"
-    url: /research/ 
-
-  - title: "Publications"
-    url: /publications/
- 
-  # - title: "Experience"
-  #   url: /Experience/    # gonna use this to decribe my teaching and internship experience
+  - title: "About"
+    url: /cv/
     
-  # - title: "Portfolio"   # I hope I can have an award page
-  #   url: /portfolio/
- 
-  - title: "CV"
-    url: /assets/Resume_afterPhD.pdf
+  - title: "Projects"
+    url: /projects/   
+  
+  - title: "Publications"
+    url: /publications/  
+  
+  - title: "Design"
+    url: /projects/#start_Design
+  
+  - title: "Blog"
+    url: /categories/ 
 
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "Travel"
+    url: /travel/
+
+
+#   - title: "Guide"
+#     url: /markdown/
+
+#   - title: "Talks"
+#     url: /talks/   
