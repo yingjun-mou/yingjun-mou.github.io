@@ -8,6 +8,7 @@ tags:
 categories:
   - Coding
   - Tutorial
+code-block-font-size: \large
 ---
 
 
@@ -37,14 +38,15 @@ conda create --name myenv
 conda create -n myenv python=3.6
 ```
 - if we want to create environment with specific packages with specific version:
+
 ```
 conda create -n myenv scipy=0.15.0 numpy 
+
 ```
-- we can also install packages after creating environment
+- we can also install packages after creating environment.TEST!!!!!!!!!!
 
 ```
 conda install -n myenv scipy
-
 ```
 
 - To clone(duplicate) an environment
