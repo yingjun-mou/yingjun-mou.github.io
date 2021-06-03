@@ -28,12 +28,12 @@ Tableau country maps overlay with more specific locations
 - Click **Create calculated field**
 - Give it a name such as color calculation, for the function, types:
 ```
-IF SUM([Time]) >= 5 then 'years'
-ELSEIF SUM([Time]) == 4 then 'months'
-ELSEIF SUM([Time]) == 3 then 'weeks'
-ELSEIF SUM([Time]) == 2 then 'days'
-ELSEIF SUM([Time]) == 1 then 'passby'
-ELSEIF SUM([Time]) == NULL then 'no'
+IF MAX([Time]) >= 5 then 'years'
+ELSEIF MAX([Time]) == 4 then 'months'
+ELSEIF MAX([Time]) == 3 then 'weeks'
+ELSEIF MAX([Time]) == 2 then 'days'
+ELSEIF MAX([Time]) == 1 then 'passby'
+ELSEIF MAX([Time]) == NULL then 'no'
 END
 ```
 
