@@ -22,7 +22,6 @@ Conda environment management
 ```
 conda env list
 ```
-- Warning: env before list, if you type conda list env, if will show the packages installed in one of the environments.
 
 2. Create an environment
 ```
@@ -41,14 +40,11 @@ conda create -n myenv python=3.6
 conda create -n myenv scipy=0.15.0 numpy 
 ```
 - we can also install packages after creating environment
-
 ```
 conda install -n myenv scipy
 
 ```
-
 - To clone(duplicate) an environment
-
 ```
 conda create --name newenv --clone myenv
 ```
@@ -70,7 +66,6 @@ conda env list
 ```
 conda activate myenv
 ```
-- Warning: there is no need for argument '-n'
 
 5. Deactivate an environment
 ```
