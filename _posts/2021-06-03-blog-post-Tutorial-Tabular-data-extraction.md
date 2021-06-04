@@ -45,5 +45,4 @@ tables.export('foo.csv', f='csv', compress=True)
 tables[0].to_csv('foo.csv')
 ```
 
-**test**
-This is a test
+- Analyze result: `print(tables[0].parsing_report)`
