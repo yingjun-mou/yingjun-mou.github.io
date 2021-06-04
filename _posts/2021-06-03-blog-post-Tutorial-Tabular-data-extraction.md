@@ -15,7 +15,7 @@ categories:
 Tabular data extraction
 ======
 
-[documentation link](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) 
+[presentation link](https://www.youtube.com/watch?v=Irf6kdl0lAA&list=LL&index=3) 
 
 ## 1. Tools
 
@@ -31,8 +31,19 @@ Tabular data extraction
 3. Time consuming
 
 **1c. Camelot**
-- Limitations:
-1. Will break multi-line cells into multi lines, many of them may be empty
+
+[camelot documentation link](https://camelot-py.readthedocs.io/en/master/) 
+
+- Advantages:
+1. Flag sup/subscript to avoid error. `tables = camelot.read_pdf('foo.pdf', flag_size=True)`
+2. Strip unnecessary character. `tables = camelot.read_pdf('foo.pdf', strip_text=' .\n')`
+3. shift text in cells that span multiple rows/columns. `Shift_text=['l', 't']`
+4. Copy and populate text in cells that span multiple rows/columns. `copy_text=['l', 't']`
+5. Export the tables to different formarts. 
+```
+tables.export('foo.csv', f='csv', compress=True)
+tables[0].to_csv('foo.csv')
+```
 
 **test**
 This is a test
