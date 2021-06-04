@@ -33,3 +33,8 @@ change the margin_top under footer section
 ## 3. How to change the font size in code block?
 \_sass\_base.scss
 change the margin_top under footer section
+
+## 4. How to add a grid of buttons for categories/tags of posts?
+- Under layouts, create separate layouts named "category", "tag", and "post".
+- Also under pages, create separte pages (md file, not html) named "category-archive", "tag-archive", "year-archive".
+
