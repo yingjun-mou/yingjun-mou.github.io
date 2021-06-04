@@ -34,6 +34,9 @@ Tabular data extraction
 
 [camelot documentation link](https://camelot-py.readthedocs.io/en/master/) 
 
+- (Huge) Limitation:
+1. Camelot only works with text-based PDFs and not scanned documents
+
 - Advantages:
 1. Flag sup/subscript to avoid error. `tables = camelot.read_pdf('foo.pdf', flag_size=True)`
 2. Strip unnecessary character. `tables = camelot.read_pdf('foo.pdf', strip_text=' .\n')`

@@ -37,4 +37,7 @@ change the margin_top under footer section
 ## 4. How to add a grid of buttons for categories/tags of posts?
 - Under layouts, create separate layouts named "category", "tag", and "post".
 - Also under pages, create separte pages (md file, not html) named "category-archive", "tag-archive", "year-archive".
+- Locate \_page.scss under \_sass folder
 
+## 5. How to change color of blog post title?
+- Locate \_archive.scss under \_sass folder
