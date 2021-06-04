@@ -30,11 +30,6 @@ Tabular data extraction
 2. Lose the structural info
 3. Time consuming
 
-**1a. Tabula**
+**1c. Camelot**
 - Limitations:
 1. Will break multi-line cells into multi lines, many of them may be empty
-
-**1a. Tabula**
-- Limitations:
-1. Will break multi-line cells into multi lines, many of them may be empty
-
