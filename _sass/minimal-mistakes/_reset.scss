@@ -2,7 +2,7 @@
    STYLE RESETS
    ========================================================================== */
 
-* { box-sizing: border-box; }
+@include border-box-sizing;
 
 html {
   /* apply a natural box layout model to all elements */
@@ -12,14 +12,6 @@ html {
 
   @include breakpoint($medium) {
     font-size: 18px;
-  }
-
-  @include breakpoint($large) {
-    font-size: 20px;
-  }
-
-  @include breakpoint($x-large) {
-    font-size: 22px;
   }
 
   -webkit-text-size-adjust: 100%;
@@ -172,7 +164,7 @@ input[type="checkbox"] {
 }
 
 input[type="search"] { /* Appearance in Safari/Chrome*/
-  box-sizing: border-box;
+  box-sizing: content-box;
   -webkit-appearance: textfield;
 }
 
