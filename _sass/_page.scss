@@ -465,30 +465,3 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
-
-
-/*
-   Wide Pages
-   ========================================================================== */
-
-.wide {
-  .page {
-    @include breakpoint($large) {
-      padding-right: $right-space;
-    }
-
-    @include breakpoint($x-large) {
-      padding-right: $right-space;
-    }
-  }
-
-  .page__related {
-    @include breakpoint($large) {
-      padding-right: $right-space;
-    }
-
-    @include breakpoint($x-large) {
-      padding-right: $right-space;
-    }
-  }
-}
