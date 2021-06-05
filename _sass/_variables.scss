@@ -47,24 +47,28 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+$gray                       : #7a8288 !default;
+$dark-gray                  : mix(#000, $gray, 40%) !default; 
+$darker-gray                : mix(#000, $gray, 60%) !default;
+$light-gray                 : mix(#fff, $gray, 50%) !default;
+$lighter-gray               : mix(#fff, $gray, 90%) !default;
 
 $body-color                 : #fff;
-$background-color           : #fff;
-$code-background-color      : #fafafa;
-$code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+$background-color           : #fff !default;
+$code-background-color      : #fafafa !default;
+$code-background-color-dark : $light-gray !default;
+$text-color                 : $dark-gray !default;
+$muted-text-color           : mix(#fff, $text-color, 35%) !default;
+$border-color               : $lighter-gray !default;
+$form-background-color      : $lighter-gray !default;
+$footer-background-color    : $lighter-gray !default;
 
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
-$danger-color               : #ee5f5b;
-$info-color                 : #52adc8;
+
+$primary-color              : #7a8288 !default;
+$success-color              : #62c462 !default;
+$warning-color              : #f89406 !default;
+$danger-color               : #ee5f5b !default;
+$info-color                 : #52adc8 !default;
 
 /* brands */
 $behance-color              : #1769FF;

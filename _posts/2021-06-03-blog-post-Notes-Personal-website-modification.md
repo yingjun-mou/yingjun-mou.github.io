@@ -41,3 +41,8 @@ change the margin_top under footer section
 
 ## 5. How to change color of blog post title?
 - Locate \_archive.scss under \_sass folder
+
+
+
+
+https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
