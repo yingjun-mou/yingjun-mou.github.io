@@ -64,3 +64,43 @@ To better visualize csv file as table in pycharm:
 2. Have to add break point by typing `# %%` or clicking the line after my df variable
 3. Open the panel for "show variable"
 4. Right click the df variable and show as dataframe
+
+
+## 5. Semantic Scholar (S2) API
+How to use SciRex data to access the source paper?
+Use Semantic Scholar (S2) API to search paper using doc_id in SciRex dataset. [Documentation link](https://api.semanticscholar.org/)
+- Use direct url: https://api.semanticscholar.org/doc_id
+There are some alternatives:
+1. Use DOI : https://api.semanticscholar.org/10.1038/nrn3241
+2. ArXiv ID : https://api.semanticscholar.org/arXiv:1705.10311
+3. Corpus ID : https://api.semanticscholar.org/CorpusID:37220927
+
+However, these options above are for manual inspection. You clicked them, you land on specific webpages. In order to let machine to automatically crawl detail info about the papers, we need to write a bit codes. [Documentation link](https://pypi.org/project/semanticscholar/)
+
+```
+pip install semanticscholar
+
+>>> import semanticscholar as sch
+>>> paper = sch.paper('10.1093/mind/lix.236.433', timeout=2)
+>>> paper.keys()
+dict_keys(['abstract', 'arxivId', 'authors', 'citationVelocity', 'citations', 'doi',
+'influentialCitationCount', 'paperId', 'references', 'title', 'topics', 'url', 'venue', 'year'])
+>>> paper['title']
+'Computing Machinery and Intelligence'
+>>> for author in paper['authors']:
+...     print(author['name'])
+...     print(author['authorId'])
+
+```
+
+Notes: seems that semanticscholar, like many other pachages, are avaialble on pip, but not available on conda. I found a workaround: 
+1. with the conda environment activated, `conda install pip`. Then `pip install xx`. 
+2. Another way to solve it is to open the **Anaconda prompt**, and type `pip install xx` there. It will install the package for all conda virtual envs.
+
+## 6. Retrieve the LaTex file of paper
+How to get the LaTex file given the S2ID?
+Once we have the S2ID, we will get the url for the arxiv page. There, we can further get the link to download LaTex file(other format). It's https://arxiv.org/e-print/' + paper['arxivId'].
+
+
+## 7. Use Scrapy to download files
+Given a download url link, how to write codes to download them in batch? The Scrapy comes into play. [Tutorial link](https://www.geeksforgeeks.org/how-to-download-files-with-scrapy/)
