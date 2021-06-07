@@ -67,15 +67,15 @@ To better visualize csv file as table in pycharm:
 
 
 ## 5. Semantic Scholar (S2) API
-How to use SciRex data to access the source paper?
-Use Semantic Scholar (S2) API to search paper using doc_id in SciRex dataset. [Documentation link](https://api.semanticscholar.org/)
+How to use SciRex data to access the source paper?\
+Use Semantic Scholar (S2) API to search paper using doc_id in SciRex dataset. [Documentation link](https://api.semanticscholar.org/)\
 - Use direct url: https://api.semanticscholar.org/doc_id
 There are some alternatives:
 1. Use DOI : https://api.semanticscholar.org/10.1038/nrn3241
 2. ArXiv ID : https://api.semanticscholar.org/arXiv:1705.10311
 3. Corpus ID : https://api.semanticscholar.org/CorpusID:37220927
 
-However, these options above are for manual inspection. You clicked them, you land on specific webpages. In order to let machine to automatically crawl detail info about the papers, we need to write a bit codes. [Documentation link](https://pypi.org/project/semanticscholar/)
+However, these options above are for manual inspection. You clicked them, you land on specific webpages. In order to let machine to automatically crawl detail info about the papers, we need to write a bit codes. [Documentation link](https://pypi.org/project/semanticscholar/)\
 
 ```
 pip install semanticscholar
@@ -93,14 +93,108 @@ dict_keys(['abstract', 'arxivId', 'authors', 'citationVelocity', 'citations', 'd
 
 ```
 
-Notes: seems that semanticscholar, like many other pachages, are avaialble on pip, but not available on conda. I found a workaround: 
+Notes: seems that semanticscholar, like many other pachages, are avaialble on pip, but not available on conda. I found a workaround: \
 1. with the conda environment activated, `conda install pip`. Then `pip install xx`. 
 2. Another way to solve it is to open the **Anaconda prompt**, and type `pip install xx` there. It will install the package for all conda virtual envs.
 
-## 6. Retrieve the LaTex file of paper
-How to get the LaTex file given the S2ID?
-Once we have the S2ID, we will get the url for the arxiv page. There, we can further get the link to download LaTex file(other format). It's https://arxiv.org/e-print/' + paper['arxivId'].
+## 6. Arxic API
+[Documentation link](https://pypi.org/project/arxiv/)\
+Download pdf/source given a arxiv id.\
+
+## 7. Retrieve the LaTex file of paper
+How to get the LaTex file given the archive file?\
+There are 4 different kinds of archive files: (1).zip (2).rar (3).gz (4).tar. Although the arxiv website instruct me to manually add an .gz extention, I found that adding .tar extention is better (if I use .gz, the python codes of unzipping will yiled a binary file with the same name, instead of yileding those actual compressed files).\
+
+1. Unzip an archive file"
+- Dependency: `pip install patool`. Import: `import patoolib`.
+- -To extract: `patoolib.extract_archive(target_filename, outdir='unpack')`
+- How to filter the files with `.tex`?\
+```
+import glob
+path = "unpack/*.tex"
+filename = glob.glob(path)[0]
+```
+The path is a list which may contains more than one instances.\
+
+2. Understand the Latex file structure:
+There are multiple types of environment enclosed by `\begin{environment_type}` and `\end{environment_type}`.
+	1. document
+	2. abstract
+	3. IEEEkeywords
+	4. figures* (include `\subfloat` column and `\caption` below each of them)
+	5. itemize (a list of bullet points, with `\item` for each)
+	6. equation
+	7. align (similar to equation, but format slitly differently)
+	8. array (can be used for showing matrix)
+	9. **table** (include `\caption`, `\begin{tabular}`)
+	10. **tabular**
+		```latex
+		\begin{tabular}{|l|cc|}
+			\hline
+			\multirow{2}{*}{Methods}  &mean IU &mean IU \\
+	           &VOC2011 test  &VOC2012 test \\
+	        \hline\hline
+	        FCN-8s~\cite{long2015fully}  &62.7 &62.2 \\
+	        DLDL-8s &64.9 &64.5 \\
+	        DLDL-8s+CRF &\textbf{67.6} &\textbf{67.1} \\
+	        \hline
+		\end{tabular}
+		```
+3. Parse a Latex file
+**TexSoup** is a package I found convenient to nevigate latex file. [Documentation link](https://texsoup.alvinwan.com/docs/quickstart.html)\
+- Install: `pip install texsoup`.
+- Import: `from TexSoup import TexSoup`
+- Soupify a latex file:\
+```
+with open("main.tex") as f:
+	soup = TexSoup(f)
+```
+or pass the latex string: `soup = TexSoup(latex_str)`\
+
+- Data structure of a soup:\
+There are only 3 different types of python objects: (1)**command**, (2)**Text**, (3)**Environment**.\
+
+- Filter out a specific types of enviornment\
+`soup.find_all('table')`, if there are more than one types, pass into a list such as `soup.find_all(['table','table*'])`\
+
+- Strip all the uncessary tokens and access the content: `.contents`, e.g. `soup.find_all('table')[i].contents`. However, I found `.text` works cleaner. The find_all will return a list of **TextNode** objects. **TextNode** instance has attribute `.text`.\
+
+- Delete the **citation** and **unecessasry superscript** and **hline** info before converting TextNode to text?
+```
+if node.name == 'tabular':
+    for subnode in node:
+        if hasattr(subnode, 'name') and (subnode.name == 'hline' or subnode.name == 'cite' or subnode.name == 'rlap'):
+            subnode.delete()
+```
 
 
-## 7. Use Scrapy to download files
-Given a download url link, how to write codes to download them in batch? The Scrapy comes into play. [Tutorial link](https://www.geeksforgeeks.org/how-to-download-files-with-scrapy/)
+- The `.text` method will omit the speicial charater `\pm`(plus-minus sign). `print(u"\u00B1")` in python.
+
+- Try `TexSoup.TexSoup(tex_code, skip_envs=(), tolerance=0)`, https://texsoup.alvinwan.com/docs/main.html
+
+- If we want to access the structural info such as 'c c', use `soup.tabular.args[0].string`
+
+4. Clean the LaTex string
+- White spaces: `s = s.strip()`
+- Not only white spaces, but tab, new line: `s = s.strip(' \t\n\r')`
+- Not only remove left and right, but also all white spaces in between: \
+```
+import re
+print(re.sub('[\s+]', '', s))
+```
+
+5. Find the caption of each tabular instance
+```
+for node in soups:
+	if node.name == 'table':
+	    for subnode in node:
+		    if subnode.name == 'caption':
+	            	caption = subnode.text		            
+```
+
+6. Modify the text of a node
+Couldn't find the way to initialize a dummy node. But in order to change the text of an existing node, it has to have a text argument(curly brackets). \
+```
+soup2 = TexSoup(r'$\pm{math}$')
+soup2.pm.string = 'not math'
+```
