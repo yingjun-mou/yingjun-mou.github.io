@@ -11,7 +11,7 @@ categories:
 ---
 
 
-Tree
+notes about solving tree-related coding questions
 ======
 
 ## 1. Concepts --- must able to disambiguate 
@@ -114,3 +114,28 @@ def postOrderTraversal(node):
 		visit(node)
 ```
 
+## 3. Leetcode questions (sorted by frequency, then difficulty)
+There will be 3 different levels of mastery:
+1. Unvisited: Not done
+2. Forgotten: Not remember
+3. Familiar: Remember the overall structure
+4. Master: Bug-free and remember all the pitfalls
+
+### 3(1). High Frequency
+| Question | Mastery | Core coding skills | Next date for review | 
+| -------- | ------- | ------------------ | -------------------- | 
+| [1448 Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Forgotten | ??? | ??? |
+| [297 Serialize and Deserialize Binary Tree]() | Unvisited | ??? | ??? |
+| [124 Binary Tree Maximum Path Sum]() | Unvisited | ??? | ??? |
+| [236 Lowest Common Ancestor of a Binary Tree]() | Unvisited | ??? | ??? |
+| [199 Binary Tree Right Side View]() | Unvisited | ??? | ??? |
+| [543 Diameter of Binary Tree]() | Unvisited | ??? | ??? |
+| [863 All Nodes Distance K in Binary Tree]() | Unvisited | ??? | ??? |
+| [987 Vertical Order Traversal of a Binary Tree]() | Unvisited | ??? | ??? |
+| [98 Validate Binary Search Tree]() | Unvisited | ??? | ??? |
+| [103 Binary Tree Zigzag Level Order Traversal]() | Unvisited | ??? | ??? |
+| [226 Invert Binary Tree]() | Unvisited | ??? | ??? |
+| [426 Convert Binary Search Tree to Sorted Doubly Linked List]() | Unvisited | ??? | ??? |
+| [173 Binary Search Tree Iterator]() | Unvisited | ??? | ??? |
+| [1650 Lowest Common Ancestor of a Binary Tree III]() | Unvisited | ??? | ??? |
+| [545 Boundary of Binary Tree]() | Unvisited | ??? | ??? |
