@@ -122,6 +122,11 @@ There will be 3 different levels of mastery:
 4. Master: Bug-free and remember all the pitfalls
 
 ### 3(1). High Frequency
+
+| node | edge | leaf |
+| --- | --- | --- |
+| attribute | attribute values | output |
+
 | Question | Mastery | Core coding skills | Next date for review | 
 | -------- | ------- | ------------------ | -------------------- | 
 | [1448 Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Forgotten | ??? | ??? |
