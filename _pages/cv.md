@@ -26,15 +26,15 @@ Education
 
 Experience
 ======
-* Student Assistant, 2021.01 - Present
-  * Supervisor: Researcher Clint Zeagler and Professor Scott Robertson
-  * Duties included: Develope web tool for wearable design
-  * Topics: Web Development, Wearable Design
+* Student Assistant, 2021.05 - Present
+  * Supervisor: Professor [Chao Zhang](http://chaozhang.org/)
+  * Topics: Knowledge extraction of multi-modal information
 
 * Graduate Teaching Assistant, 2021.01 - Present
   * CS 6310 Software Architecture and Design (Spring 2021)
   * A graduate level computer science course hosted online via Udacity, with more than 600 students around the world
   * Supervisor: Professor Mark Moss
+
 
 <!--
 Skills

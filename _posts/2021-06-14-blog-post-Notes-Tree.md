@@ -19,18 +19,18 @@ Tree
 	1. A root node
 	2. Root node has zero or many child nodes
 - (2) Binary Tree (quantity)
-	1. Each node has **no more than** 2 child nodes
+	1. Each node has **no more than 2** child nodes
 - (3a) Binary Search Tree (ordering)
-	1. Binary Tree, and all nodes have a orders: left child nodes <= self < right child nodes
+	1. Binary Tree, and all nodes have a orders: **left child nodes <= self < right child nodes**
 - (3b) Complete Binary Tree (quantity + ordering)
-	1. All level are filled, except maybe the leaf level
+	1. All level are filled(**exactly 2**), except maybe the leaf level
 	2. For the leaf level, it will be filled from left to right
 - (3c) Full Binary Tree (quantity)
-	1. Every node has either 0 or 2 children 
+	1. Every node has **either 0 or 2** children 
 - (3d) Perfect Binary Tree (quantity)
-	1. Every node has exactly 2 children
+	1. Every node has **exactly 2** children
 - (4) Balanced Tree (order of quantity)
-	1. Not necessarily perfect, but "balanced enough" to ensure O(logN) for insert and find. 
+	1. Not necessarily perfect, but "balanced enough" to ensure **O(logN)** for insert and find. 
 	2. e.g. red-black tree, AVL tree 
 
 ## 2. Core code block
