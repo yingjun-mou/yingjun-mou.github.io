@@ -1,20 +1,22 @@
 ---
-title: 'Reading notes: *SciREX: A Challenge Dataset for Document-Level Information Extraction*'
-date: 2021-05-19
-permalink: /posts/2021/05/SciREX a challenge dataset/
+title: 'Reading notes: *Bridging collaborative filtering and semi-supervised learning: a neural approach for POI recommendation*'
+date: 2021-06-14
+permalink: /posts/2021/06/SSL for POI recommendation/
 tags:
   - Paper Reading
-  - Information Extraction
+  - Recommender System
+  - Geospatial Data
+  - Machine Learning
   - NLP
 categories:
   - Research
 ---
 
 
-Reading notes: SciREX: A Challenge Dataset for Document-Level Information Extraction
+A KDD paper about solving POI recommender system challenges using neural network
 ======
 
-Link of the source paper: https://arxiv.org/abs/2005.00512
+Link of the source paper: https://www.kdd.org/kdd2017/papers/view/bridging-collaborative-filtering-and-semi-supervised-learning-a-neural-appr
 
 ## 1. Problems that the paper is trying to solve?
 
