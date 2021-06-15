@@ -146,8 +146,8 @@ There will be 3 different levels of mastery:
 
 | Question | Mastery | Core coding skills | Pitfalls | Last date of practice | 
 | -------- | ------- | ------------------ | -------- | --------------------- | 
-| [1448 Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Forgotten | 对具有“从根开始全路径满足X条件(比如单调递增)”性质的节点进行计数 | (1)use nonlocal counter shared by different DFS branches. (2)the function needs to memorize the greatest val so far along the path, whether child is larger or smaller only affects which greatest val to be used | 06/15/2021 |
-| [297 Serialize and Deserialize Binary Tree]() | Unvisited | ??? | ??? | 06/15/2021 |
+| [1448 Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Forgotten | 对具有“从根开始全路径满足X条件(比如单调递增)”性质的节点进行计数 | `1. use nonlocal counter shared by different DFS branches.`<br />`2. the function needs to memorize the greatest val so far along the path, whether child is larger or smaller only affects which greatest val to be used` | 06/15/2021 |
+| [297 Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Unvisited | ??? | ??? | 06/15/2021 |
 | [124 Binary Tree Maximum Path Sum]() | Unvisited | ??? | ??? | 06/15/2021 |
 | [236 Lowest Common Ancestor of a Binary Tree]() | Unvisited | ??? | ??? | 06/15/2021 |
 | [199 Binary Tree Right Side View]() | Unvisited | ??? | ??? | 06/15/2021 |
