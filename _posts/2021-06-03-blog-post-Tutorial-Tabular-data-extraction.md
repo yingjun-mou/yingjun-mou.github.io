@@ -146,7 +146,7 @@ There are multiple types of environment enclosed by `\begin{environment_type}` a
 - Install: `pip install texsoup`.
 - Import: `from TexSoup import TexSoup`
 - Soupify a latex file:\
-```
+```python
 with open("main.tex") as f:
 	soup = TexSoup(f)
 ```
@@ -161,7 +161,7 @@ There are only 3 different types of python objects: (1)**command**, (2)**Text**,
 - Strip all the uncessary tokens and access the content: `.contents`, e.g. `soup.find_all('table')[i].contents`. However, I found `.text` works cleaner. The find_all will return a list of **TextNode** objects. **TextNode** instance has attribute `.text`.
 
 - Delete the **citation** and **unecessasry superscript** and **hline** info before converting TextNode to text?
-```
+```python
 if node.name == 'tabular':
     for subnode in node:
         if hasattr(subnode, 'name') and (subnode.name == 'hline' or subnode.name == 'cite' or subnode.name == 'rlap'):
@@ -179,13 +179,13 @@ if node.name == 'tabular':
 - White spaces: `s = s.strip()`
 - Not only white spaces, but tab, new line: `s = s.strip(' \t\n\r')`
 - Not only remove left and right, but also all white spaces in between: \
-```
+```python
 import re
 print(re.sub('[\s+]', '', s))
 ```
 
 5. Find the caption of each tabular instance
-```
+```python
 for node in soups:
 	if node.name == 'table':
 	    for subnode in node:
@@ -193,9 +193,74 @@ for node in soups:
 	            	caption = subnode.text		            
 ```
 
-6. Modify the text of a node
-Couldn't find the way to initialize a dummy node. But in order to change the text of an existing node, it has to have a text argument(curly brackets). \
+6. Convert Latex math expressions to python
+Use **unicodeit** `pip install unicodeit`\
+```python
+import unicodeit
+print(unicodeit.replace('\\alpha'))
+
 ```
-soup2 = TexSoup(r'$\pm{math}$')
-soup2.pm.string = 'not math'
+More specifically, in my case, to fully convert a latex math node together its subscript or supscript into python unicode:\
+```python
+# solve the issue of math symbols
+if subnode.name == '$' and hasattr(subnode.contents[0], 'name'):
+    math_epr = ''.join([str(element) for element in subnode.contents])
+    replace_node(subnode, unicodeit.replace(math_epr))
+```
+
+7. How to modify the text of a node?
+Seems that there is no available function to modify in place. The only workaround I found is to construct a new node with specific text, then replace the original node with the new one.
+
+8. How to construct a new node with specific text, and specific name?
+```python
+new_textnode = TexNode(TexSoup.data.TexText("NEW TEXT"))
+# or directly replace it with string obj
+new_textnode = TexSoup.data.TexText("NEW TEXT")
+
+new_textnode.name = 'NEW NAME'
+subnode.replace_with(new_textnode)
+```
+
+9. How to deal with multicolumn and multirow cells?
+Convert dataframe to dictionary, iterate through each cell, if `cell==''`, replace it with the value on the top or left.\
+In my case, I can easily deal with multicolumn by concatenate multiple repeating strings at the TexSoup node level. But couldn't deal with multirow cell in a similar way. So, when processing the dataframe, I can only deal with multirow.
+```python
+# replace empty cell with value above
+df_dict = df.to_dict()
+    num_col = len(df_dict)
+    num_row = len(df_dict[0])
+    for i in range(num_col):
+        for j in range(num_row):
+            if df_dict[i][j] == '' and j>0:
+                df_dict[i][j] = df_dict[i][j-1]
+``` 
+
+10. How to open csv file with UTF-8 unicode?
+`Data`---`From Text`---Set UTF-8 Unicode---Set delimiter to **comma**.
+
+11. How to use os to create directory?
+
+12. How to use os to delete and filter files?
+```
+for filename in os.listdir(path):
+    print(filename)
+    if filename not in file_name:
+        os.remove(filename)
+```
+or 
+```python
+for filename in glob.glob("mypath/version*"):
+# can be glob.glob('/tmp', '*[0-9]*.jpg')
+```
+
+13. Fast convert a string to be valid for filename(alphanumeric)?
+Fast way: \
+```python
+"".join(x for x in NAME if x.isalnum())
+```
+Better format with underscore: \
+```python
+for x in caption:
+    if not x.isalnum():
+        caption.replace(x, '_')
 ```
