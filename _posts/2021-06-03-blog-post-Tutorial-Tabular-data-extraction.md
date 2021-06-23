@@ -57,6 +57,30 @@ tables[0].to_csv('foo.csv') # to_json(), to_excel() to_html() or to_sqlite()
 6. Analyze result: `print(tables[0].parsing_report)`
 7. Specify pages: `camelot.read_pdf(file, pages='1,4-10,20-end', flavor = 'lattice')` 
 
+8. After we get the table from pdf, we can convert to dataframe using `table.df` or to lists using `table.data`
+
+9. The tabular extraction from pdf sometimes will capture the plot(because they also have grid). To solve this, we can simply replace '' in dataframe with NaN, and use:\
+```python
+df = df.replace('', np.nan)  
+if not df.isna().values.all():
+    # do something with those df we really want
+```
+
+10. The camelot will add `\n` into the text of a multi-row cell. In order to solve it, add an arg `strip_text=' .\n'` for `camelot.read_pdf()`.
+
+11. PSSyntax error dealing with pdfs with Chinese characters.
+It will log something like `raise PSSyntaxError(error_msg) pdfminer.psparser.PSSyntaxError: Invalid dictionary construct: [/'Type', /'Font', /'Subtype', /'Type0', /'BaseFont', /b"b'", /"ABCDEE+\\xcb\\xce\\xcc\\xe5'", /'Encoding', /'Identity-H', /'DescendantFonts', <PDFObjRef:17>, /'ToUnicode', <PDFObjRef:23>]`.
+To fix it, the github recommend using command line to fix the pdf files. And that's what I did. 
+```python
+for pdf_filename in pdf_list:
+    temp_name = pdf_filename.replace('.pdf', '_temp.pdf')
+    fix_pdf_command = 'gs -o ' + temp_name + ' -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -dQUIET ' + pdf_filename  # new name then old name
+    os.system(fix_pdf_command)
+    os.replace(temp_name, pdf_filename)
+```
+But some other people also suggested fixing by [modifying the source codes](https://www.cnblogs.com/Eeyhan/archive/2019/12/30/12111371.html).
+
+
 
 ## 4. CSV table view in Pycharm
 To better visualize csv file as table in pycharm:
@@ -140,7 +164,23 @@ There are multiple types of environment enclosed by `\begin{environment_type}` a
 	        \hline
 		\end{tabular}
 		```
-3. Parse a Latex file
+
+3. Delete all the comments from a Latex file
+
+Comments are started with `%` in tex file. I didn't realized how anoying they are until I have done most parts of the parsing.\
+
+To achieve this, I tried **arxiv-latex-cleaner** [[Link od arxiv-latex-cleaner]](https://github.com/google-research/arxiv-latex-cleaner/), but got no luck. Eventually end up using file io.\
+```python
+# Clean up all the comments
+with open(latex_filename, "r") as f:
+    lines = f.readlines()
+with open(latex_filename, "w") as f:
+    for line in lines:
+        if len(line.strip("\n")) and line.strip("\n")[0] != '%':
+            f.write(line)
+```
+
+4. Parse a Latex file
 
 **TexSoup** is a package I found convenient to nevigate latex file. [Documentation link](https://texsoup.alvinwan.com/docs/quickstart.html)\
 - Install: `pip install texsoup`.
@@ -175,7 +215,7 @@ if node.name == 'tabular':
 
 - If we want to access the structural info such as 'c c', use `soup.tabular.args[0].string`
 
-4. Clean the LaTex string
+5. Clean the LaTex string
 - White spaces: `s = s.strip()`
 - Not only white spaces, but tab, new line: `s = s.strip(' \t\n\r')`
 - Not only remove left and right, but also all white spaces in between: \
@@ -184,7 +224,7 @@ import re
 print(re.sub('[\s+]', '', s))
 ```
 
-5. Find the caption of each tabular instance
+6. Find the caption of each tabular instance
 ```python
 for node in soups:
 	if node.name == 'table':
@@ -193,25 +233,42 @@ for node in soups:
 	            	caption = subnode.text		            
 ```
 
-6. Convert Latex math expressions to python
+7. Convert Latex math expressions to python
 Use **unicodeit** `pip install unicodeit`\
 ```python
 import unicodeit
 print(unicodeit.replace('\\alpha'))
 
 ```
-More specifically, in my case, to fully convert a latex math node together its subscript or supscript into python unicode:\
+But if we directly unicode everything in dataframe, there may be a chance that it will be coincidentally identical to some other unrecognized strings. For example, a unicoded '250\%' will be displayed as a shaded block '▒'.\
+To solve it, for each string, I find the occurences of slash, then find the 1st numeric char after it. We will only unicode the substring in between:\
 ```python
-# solve the issue of math symbols
-if subnode.name == '$' and hasattr(subnode.contents[0], 'name'):
-    math_epr = ''.join([str(element) for element in subnode.contents])
-    replace_node(subnode, unicodeit.replace(math_epr))
+def clean_tex(inp):
+    inp = inp.strip(' \t\n\r').strip('~').replace('~', ' ')
+    # locate each slash and the 1st numeric char after this slash
+    # in between them will need to be unicoded
+    target_str = inp
+    while target_str.find('\\') != -1:
+        first_slash_pos = target_str.find('\\')
+        first_num_pos = re.search(r"\d", target_str[first_slash_pos:]) # first numeric char
+        if not first_num_pos:
+            target_str = target_str[:first_slash_pos] + unicodeit.replace(target_str[first_slash_pos:])
+        else:
+            target_str = target_str[:first_slash_pos] + unicodeit.replace(target_str[first_slash_pos:first_num_pos.start()]) \
+                         + target_str[first_num_pos.start():]
+
+    return target_str
 ```
 
-7. How to modify the text of a node?
+Problems of unicodes:\
+Seems that unicode has issueus dealing with subscript. e.g. `p_{emp}` works while `p_{gen}` doesn't. Some char were not recognized by unicodeit.\
+To solve it, I have to change it to **latexcodec** and **pylatexenc**.\
+
+
+8. How to modify the text of a node?
 Seems that there is no available function to modify in place. The only workaround I found is to construct a new node with specific text, then replace the original node with the new one.
 
-8. How to construct a new node with specific text, and specific name?
+9. How to construct a new node with specific text, and specific name?
 ```python
 new_textnode = TexNode(TexSoup.data.TexText("NEW TEXT"))
 # or directly replace it with string obj
@@ -221,7 +278,7 @@ new_textnode.name = 'NEW NAME'
 subnode.replace_with(new_textnode)
 ```
 
-9. How to deal with multicolumn and multirow cells?
+10. How to deal with multicolumn and multirow cells?
 Convert dataframe to dictionary, iterate through each cell, if `cell==''`, replace it with the value on the top or left.\
 In my case, I can easily deal with multicolumn by concatenate multiple repeating strings at the TexSoup node level. But couldn't deal with multirow cell in a similar way. So, when processing the dataframe, I can only deal with multirow.
 ```python
@@ -235,12 +292,12 @@ df_dict = df.to_dict()
                 df_dict[i][j] = df_dict[i][j-1]
 ``` 
 
-10. How to open csv file with UTF-8 unicode?
+11. How to open csv file with UTF-8 unicode?
 `Data`---`From Text`---Set UTF-8 Unicode---Set delimiter to **comma**.
 
-11. How to use os to create directory?
+12. How to use os to create directory?
 
-12. How to use os to delete and filter files?
+13. How to use os to delete and filter files?
 ```
 for filename in os.listdir(path):
     print(filename)
@@ -253,7 +310,7 @@ for filename in glob.glob("mypath/version*"):
 # can be glob.glob('/tmp', '*[0-9]*.jpg')
 ```
 
-13. Fast convert a string to be valid for filename(alphanumeric)?
+14. Fast convert a string to be valid for filename(alphanumeric)?
 Fast way: \
 ```python
 "".join(x for x in NAME if x.isalnum())
@@ -264,3 +321,8 @@ for x in caption:
     if not x.isalnum():
         caption.replace(x, '_')
 ```
+
+15. Find the tabular node?
+Warning:
+- it can be 'tabular', or 'tabularx'.
+- there may be more than one tabular node in one table node
