@@ -271,7 +271,6 @@ Seems that there is no available function to modify in place. The only workaroun
 13. How to construct a new node with specific text, and specific name?
 ```python
 new_textnode = TexNode(TexSoup.data.TexText("NEW TEXT"))
-# or directly replace it with string obj
 new_textnode = TexSoup.data.TexText("NEW TEXT")
 
 new_textnode.name = 'NEW NAME'
