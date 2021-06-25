@@ -180,9 +180,9 @@ with open(latex_filename, "w") as f:
             f.write(line)
 ```
 
-4. Parse a Latex file
+## 8. TexSoup: parse a Latex file
 
-**TexSoup** is a package I found convenient to nevigate latex file. [Documentation link](https://texsoup.alvinwan.com/docs/quickstart.html)\
+1. **TexSoup** is a package I found convenient to nevigate latex file. [Documentation link](https://texsoup.alvinwan.com/docs/quickstart.html)\
 - Install: `pip install texsoup`.
 - Import: `from TexSoup import TexSoup`
 - Soupify a latex file:\
@@ -192,15 +192,15 @@ with open("main.tex") as f:
 ```
 or pass the latex string: `soup = TexSoup(latex_str)`
 
-- Data structure of a soup:\
+2. Data structure of a soup:\
 There are only 3 different types of python objects: (1)**command**, (2)**Text**, (3)**Environment**.
 
-- Filter out a specific types of enviornment\
+3. Filter out a specific types of enviornment\
 `soup.find_all('table')`, if there are more than one types, pass into a list such as `soup.find_all(['table','table*'])`
 
-- Strip all the uncessary tokens and access the content: `.contents`, e.g. `soup.find_all('table')[i].contents`. However, I found `.text` works cleaner. The find_all will return a list of **TextNode** objects. **TextNode** instance has attribute `.text`.
+4. Strip all the uncessary tokens and access the content: `.contents`, e.g. `soup.find_all('table')[i].contents`. However, I found `.text` works cleaner. The find_all will return a list of **TextNode** objects. **TextNode** instance has attribute `.text`.
 
-- Delete the **citation** and **unecessasry superscript** and **hline** info before converting TextNode to text?
+5. Delete the **citation** and **unecessasry superscript** and **hline** info before converting TextNode to text?
 ```python
 if node.name == 'tabular':
     for subnode in node:
@@ -209,13 +209,13 @@ if node.name == 'tabular':
 ```
 
 
-- The `.text` method will omit the speicial charater `\pm`(plus-minus sign). `print(u"\u00B1")` in python.
+6. The `.text` method will omit the speicial charater `\pm`(plus-minus sign). `print(u"\u00B1")` in python.
 
-- Try `TexSoup.TexSoup(tex_code, skip_envs=(), tolerance=0)`, https://texsoup.alvinwan.com/docs/main.html
+7. Try `TexSoup.TexSoup(tex_code, skip_envs=(), tolerance=0)`, https://texsoup.alvinwan.com/docs/main.html
 
-- If we want to access the structural info such as 'c c', use `soup.tabular.args[0].string`
+8. If we want to access the structural info such as 'c c', use `soup.tabular.args[0].string`
 
-5. Clean the LaTex string
+9. Clean the LaTex string
 - White spaces: `s = s.strip()`
 - Not only white spaces, but tab, new line: `s = s.strip(' \t\n\r')`
 - Not only remove left and right, but also all white spaces in between: \
@@ -224,7 +224,7 @@ import re
 print(re.sub('[\s+]', '', s))
 ```
 
-6. Find the caption of each tabular instance
+10. Find the caption of each tabular instance
 ```python
 for node in soups:
 	if node.name == 'table':
@@ -233,7 +233,7 @@ for node in soups:
 	            	caption = subnode.text		            
 ```
 
-7. Convert Latex math expressions to python
+11. Convert Latex math expressions to python
 Use **unicodeit** `pip install unicodeit`\
 ```python
 import unicodeit
@@ -265,10 +265,10 @@ Seems that unicode has issueus dealing with subscript. e.g. `p_{emp}` works whil
 To solve it, I have to change it to **latexcodec** and **pylatexenc**.\
 
 
-8. How to modify the text of a node?
+12. How to modify the text of a node?
 Seems that there is no available function to modify in place. The only workaround I found is to construct a new node with specific text, then replace the original node with the new one.
 
-9. How to construct a new node with specific text, and specific name?
+13. How to construct a new node with specific text, and specific name?
 ```python
 new_textnode = TexNode(TexSoup.data.TexText("NEW TEXT"))
 # or directly replace it with string obj
@@ -277,8 +277,20 @@ new_textnode = TexSoup.data.TexText("NEW TEXT")
 new_textnode.name = 'NEW NAME'
 subnode.replace_with(new_textnode)
 ```
+14. Find the tabular node?
+Warning:
+- it can be 'tabular', or 'tabularx' or 'tabulary'.
+- there may be more than one tabular node in one table node
 
-10. How to deal with multicolumn and multirow cells?
+15. Math related issue resulting exception during the Latex parsing.
+Seems that TexSoup(at the point I installed it) is very error-prone when dealing with math env `$ X $` when formula gets complicated. Most of the time it is becuase TexSoup will recognize `$` together the the adjacent char before or after it. There are a few discussion on the Github, but I realized that the codes on master repo are different from the codes I pip installed a few days ago. Seems that they haven't released the updates on PyPI. And after I download the codes from master and manually replaced the source codes, the problem was solved.
+
+Another reminder: after replacing the source codes in the library, needs to restart the python terminal to see the updates.
+
+
+## 8. Other Python related issues
+
+1. How to deal with multicolumn and multirow cells?
 Convert dataframe to dictionary, iterate through each cell, if `cell==''`, replace it with the value on the top or left.\
 In my case, I can easily deal with multicolumn by concatenate multiple repeating strings at the TexSoup node level. But couldn't deal with multirow cell in a similar way. So, when processing the dataframe, I can only deal with multirow.
 ```python
@@ -292,12 +304,12 @@ df_dict = df.to_dict()
                 df_dict[i][j] = df_dict[i][j-1]
 ``` 
 
-11. How to open csv file with UTF-8 unicode?
+2. How to open csv file with UTF-8 unicode?
 `Data`---`From Text`---Set UTF-8 Unicode---Set delimiter to **comma**.
 
-12. How to use os to create directory?
+3.
 
-13. How to use os to delete and filter files?
+4. How to use os to to create directory, delete, and filter files?
 ```
 for filename in os.listdir(path):
     print(filename)
@@ -310,7 +322,7 @@ for filename in glob.glob("mypath/version*"):
 # can be glob.glob('/tmp', '*[0-9]*.jpg')
 ```
 
-14. Fast convert a string to be valid for filename(alphanumeric)?
+5. Fast convert a string to be valid for filename(alphanumeric)?
 Fast way: \
 ```python
 "".join(x for x in NAME if x.isalnum())
@@ -322,7 +334,4 @@ for x in caption:
         caption.replace(x, '_')
 ```
 
-15. Find the tabular node?
-Warning:
-- it can be 'tabular', or 'tabularx'.
-- there may be more than one tabular node in one table node
+
